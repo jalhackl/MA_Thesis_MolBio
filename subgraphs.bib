@@ -1,0 +1,136 @@
+﻿% This file was created with Citavi 6.7.0.0
+
+@article{.,
+ title = {NeurIPS-2020-weisfeiler-and-leman-go-sparse-towards-scalable-higher-order-graph-embeddings-Paper},
+ file = {NeurIPS-2020-weisfeiler-and-leman-go-sparse-towards-scalable-higher-order-graph-embeddings-Paper:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\NeurIPS-2020-weisfeiler-and-leman-go-sparse-towards-scalable-higher-order-graph-embeddings-Paper.pdf:pdf}
+}
+
+
+@misc{Besta.18.06.2024,
+ abstract = {Higher-order graph neural networks (HOGNNs) are an important class of GNN models that harness polyadic relations between vertices beyond plain edges. They have been used to eliminate issues such as over-smoothing or over-squashing, to significantly enhance the accuracy of GNN predictions, to improve the expressiveness of GNN architectures, and for numerous other goals. A plethora of HOGNN models have been introduced, and they come with diverse neural architectures, and even with different notions of what the {\textquotedbl}higher-order{\textquotedbl} means. This richness makes it very challenging to appropriately analyze and compare HOGNN models, and to decide in what scenario to use specific ones. To alleviate this, we first design an in-depth taxonomy and a blueprint for HOGNNs. This facilitates designing models that maximize performance. Then, we use our taxonomy to analyze and compare the available HOGNN models. The outcomes of our analysis are synthesized in a set of insights that help to select the most beneficial GNN model in a given scenario, and a comprehensive list of challenges and opportunities for further research into more powerful HOGNNs.},
+ author = {Besta, Maciej and Scheidl, Florian and Gianinazzi, Lukas and Klaiman, Shachar and M{\"u}ller, J{\"u}rgen and Hoefler, Torsten},
+ date = {18.06.2024},
+ title = {Demystifying Higher-Order Graph Neural Networks},
+ url = {http://arxiv.org/pdf/2406.12841v1},
+ keywords = {Computer Science - Artificial Intelligence;Computer Science - Learning},
+ file = {besta-hognn:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\besta-hognn.pdf:pdf}
+}
+
+
+@misc{Bevilacqua.06.10.2021,
+ abstract = {Message-passing neural networks (MPNNs) are the leading architecture for deep learning on graph-structured data, in large part due to their simplicity and scalability. Unfortunately, it was shown that these architectures are limited in their expressive power. This paper proposes a novel framework called Equivariant Subgraph Aggregation Networks (ESAN) to address this issue. Our main observation is that while two graphs may not be distinguishable by an MPNN, they often contain distinguishable subgraphs. Thus, we propose to represent each graph as a set of subgraphs derived by some predefined policy, and to process it using a suitable equivariant architecture. We develop novel variants of the 1-dimensional Weisfeiler-Leman (1-WL) test for graph isomorphism, and prove lower bounds on the expressiveness of ESAN in terms of these new WL variants. We further prove that our approach increases the expressive power of both MPNNs and more expressive architectures. Moreover, we provide theoretical results that describe how design choices such as the subgraph selection policy and equivariant neural architecture affect our architecture's expressive power. To deal with the increased computational cost, we propose a subgraph sampling scheme, which can be viewed as a stochastic version of our framework. A comprehensive set of experiments on real and synthetic datasets demonstrates that our framework improves the expressive power and overall performance of popular GNN architectures.},
+ author = {Bevilacqua, Beatrice and Frasca, Fabrizio and Lim, Derek and Srinivasan, Balasubramaniam and Cai, Chen and Balamurugan, Gopinath and Bronstein, Michael M. and Maron, Haggai},
+ date = {06.10.2021},
+ title = {Equivariant Subgraph Aggregation Networks},
+ url = {http://arxiv.org/pdf/2110.02910v3},
+ keywords = {Computer Science - Learning;Statistics - Machine Learning},
+ file = {2110.02910v3:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\2110.02910v3.pdf:pdf}
+}
+
+
+@misc{Frasca.22.06.2022,
+ abstract = {Subgraph GNNs are a recent class of expressive Graph Neural Networks (GNNs) which model graphs as collections of subgraphs. So far, the design space of possible Subgraph GNN architectures as well as their basic theoretical properties are still largely unexplored. In this paper, we study the most prominent form of subgraph methods, which employs node-based subgraph selection policies such as ego-networks or node marking and deletion. We address two central questions: (1) What is the upper-bound of the expressive power of these methods? and (2) What is the family of equivariant message passing layers on these sets of subgraphs?. Our first step in answering these questions is a novel symmetry analysis which shows that modelling the symmetries of node-based subgraph collections requires a significantly smaller symmetry group than the one adopted in previous works. This analysis is then used to establish a link between Subgraph GNNs and Invariant Graph Networks (IGNs). We answer the questions above by first bounding the expressive power of subgraph methods by 3-WL, and then proposing a general family of message-passing layers for subgraph methods that generalises all previous node-based Subgraph GNNs. Finally, we design a novel Subgraph GNN dubbed SUN, which theoretically unifies previous architectures while providing better empirical performance on multiple benchmarks.},
+ author = {Frasca, Fabrizio and Bevilacqua, Beatrice and Bronstein, Michael M. and Maron, Haggai},
+ date = {22.06.2022},
+ title = {Understanding and Extending Subgraph GNNs by Rethinking Their Symmetries},
+ url = {http://arxiv.org/pdf/2206.11140v3},
+ keywords = {Computer Science - Learning},
+ file = {2206.11140v3:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\2206.11140v3.pdf:pdf}
+}
+
+
+@misc{Hamilton.07.06.2017,
+ abstract = {Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, from content recommendation to identifying protein functions. However, most existing approaches require that all nodes in the graph are present during training of the embeddings; these previous approaches are inherently transductive and do not naturally generalize to unseen nodes. Here we present GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data. Instead of training individual embeddings for each node, we learn a function that generates embeddings by sampling and aggregating features from a node's local neighborhood. Our algorithm outperforms strong baselines on three inductive node-classification benchmarks: we classify the category of unseen nodes in evolving information graphs based on citation and Reddit post data, and we show that our algorithm generalizes to completely unseen graphs using a multi-graph dataset of protein-protein interactions.},
+ author = {Hamilton, William L. and Ying, Rex and Leskovec, Jure},
+ date = {07.06.2017},
+ title = {Inductive Representation Learning on Large Graphs},
+ url = {http://arxiv.org/pdf/1706.02216v4},
+ keywords = {Computer Science - Learning;Statistics - Machine Learning},
+ file = {1706.02216v4:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\1706.02216v4.pdf:pdf}
+}
+
+
+@misc{Huang.22.10.2022,
+ abstract = {Message Passing Neural Networks (MPNNs) are a widely used class of Graph Neural Networks (GNNs). The limited representational power of MPNNs inspires the study of provably powerful GNN architectures. However, knowing one model is more powerful than another gives little insight about what functions they can or cannot express. It is still unclear whether these models are able to approximate specific functions such as counting certain graph substructures, which is essential for applications in biology, chemistry and social network analysis. Motivated by this, we propose to study the counting power of Subgraph MPNNs, a recent and popular class of powerful GNN models that extract rooted subgraphs for each node, assign the root node a unique identifier and encode the root node's representation within its rooted subgraph. Specifically, we prove that Subgraph MPNNs fail to count more-than-4-cycles at node level, implying that node representations cannot correctly encode the surrounding substructures like ring systems with more than four atoms. To overcome this limitation, we propose I$^2$-GNNs to extend Subgraph MPNNs by assigning different identifiers for the root node and its neighbors in each subgraph. I$^2$-GNNs' discriminative power is shown to be strictly stronger than Subgraph MPNNs and partially stronger than the 3-WL test. More importantly, I$^2$-GNNs are proven capable of counting all 3, 4, 5 and 6-cycles, covering common substructures like benzene rings in organic chemistry, while still keeping linear complexity. To the best of our knowledge, it is the first linear-time GNN model that can count 6-cycles with theoretical guarantees. We validate its counting power in cycle counting tasks and demonstrate its competitive performance in molecular prediction benchmarks.},
+ author = {Huang, Yinan and Peng, Xingang and Ma, Jianzhu and Zhang, Muhan},
+ date = {22.10.2022},
+ title = {Boosting the Cycle Counting Power of Graph Neural Networks with  I$^2$-GNNs},
+ url = {http://arxiv.org/pdf/2210.13978v3},
+ keywords = {Computer Science - Learning},
+ file = {2210.13978v3:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\2210.13978v3.pdf:pdf}
+}
+
+
+@article{JohnBoazLee.,
+ author = {{John Boaz Lee} and {Ryan A. Rossi} and {Xiangnan Kong} and {Sungchul Kim} and {Eunyee Koh} and {and Anup Rao}},
+ title = {Higher-order Graph Convolutional Networks},
+ file = {Higher-order-GCNs:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\Higher-order-GCNs.pdf:pdf}
+}
+
+
+@misc{Liu.11.11.2019,
+ abstract = {Graph Convolution Network (GCN) has been recognized as one of the most effective graph models for semi-supervised learning, but it extracts merely the first-order or few-order neighborhood information through information propagation, which suffers performance drop-off for deeper structure. Existing approaches that deal with the higher-order neighbors tend to take advantage of adjacency matrix power. In this paper, we assume a seemly trivial condition that the higher-order neighborhood information may be similar to that of the first-order neighbors. Accordingly, we present an unsupervised approach to describe such similarities and learn the weight matrices of higher-order neighbors automatically through Lasso that minimizes the feature loss between the first-order and higher-order neighbors, based on which we formulate the new convolutional filter for GCN to learn the better node representations. Our model, called higher-order weighted GCN(HWGCN), has achieved the state-of-the-art results on a number of node classification tasks over Cora, Citeseer and Pubmed datasets.},
+ author = {Liu, Songtao and Chen, Lingwei and Dong, Hanze and Wang, Zihao and Wu, Dinghao and Huang, Zengfeng},
+ date = {11.11.2019},
+ title = {Higher-order Weighted Graph Convolutional Networks},
+ url = {http://arxiv.org/pdf/1911.04129v2},
+ keywords = {Computer Science - Learning;Statistics - Machine Learning},
+ file = {1911.04129v2:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\1911.04129v2.pdf:pdf}
+}
+
+
+@misc{Maron.27.05.2019,
+ abstract = {Recently, the Weisfeiler-Lehman (WL) graph isomorphism test was used to measure the expressive power of graph neural networks (GNN). It was shown that the popular message passing GNN cannot distinguish between graphs that are indistinguishable by the 1-WL test (Morris et al. 2018; Xu et al. 2019). Unfortunately, many simple instances of graphs are indistinguishable by the 1-WL test.  In search for more expressive graph learning models we build upon the recent k-order invariant and equivariant graph neural networks (Maron et al. 2019a,b) and present two results:  First, we show that such k-order networks can distinguish between non-isomorphic graphs as good as the k-WL tests, which are provably stronger than the 1-WL test for k{\textgreater}2. This makes these models strictly stronger than message passing models. Unfortunately, the higher expressiveness of these models comes with a computational cost of processing high order tensors.  Second, setting our goal at building a provably stronger, simple and scalable model we show that a reduced 2-order network containing just scaled identity operator, augmented with a single quadratic operation (matrix multiplication) has a provable 3-WL expressive power. Differently put, we suggest a simple model that interleaves applications of standard Multilayer-Perceptron (MLP) applied to the feature dimension and matrix multiplication. We validate this model by presenting state of the art results on popular graph classification and regression tasks. To the best of our knowledge, this is the first practical invariant/equivariant model with guaranteed 3-WL expressiveness, strictly stronger than message passing models.},
+ author = {Maron, Haggai and Ben-Hamu, Heli and Serviansky, Hadar and Lipman, Yaron},
+ date = {27.05.2019},
+ title = {Provably Powerful Graph Networks},
+ url = {http://arxiv.org/pdf/1905.11136v4},
+ keywords = {Computer Science - Learning;Statistics - Machine Learning},
+ file = {1905.11136v4:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\1905.11136v4.pdf:pdf}
+}
+
+
+@misc{Wang.28.11.2023,
+ abstract = {We introduce PyTorch Geometric High Order (PyGHO), a library for High Order Graph Neural Networks (HOGNNs) that extends PyTorch Geometric (PyG). Unlike ordinary Message Passing Neural Networks (MPNNs) that exchange messages between nodes, HOGNNs, encompassing subgraph GNNs and k-WL GNNs, encode node tuples, a method previously lacking a standardized framework and often requiring complex coding. PyGHO's main objective is to provide an unified and user-friendly interface for various HOGNNs. It accomplishes this through streamlined data structures for node tuples, comprehensive data processing utilities, and a flexible suite of operators for high-order GNN methodologies. In this work, we present a detailed in-depth of PyGHO and compare HOGNNs implemented with PyGHO with their official implementation on real-world tasks. PyGHO achieves up to {\$}50\%$ acceleration and reduces the code needed for implementation by an order of magnitude. Our library is available at \url{https://github.com/GraphPKU/PygHO}.},
+ author = {Wang, Xiyuan and Zhang, Muhan},
+ date = {28.11.2023},
+ title = {PyTorch Geometric High Order: A Unified Library for High Order Graph  Neural Network},
+ url = {http://arxiv.org/pdf/2311.16670v1},
+ keywords = {Computer Science - Learning},
+ file = {2311.16670v1:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\2311.16670v1.pdf:pdf}
+}
+
+
+@misc{Zhang.14.02.2023,
+ abstract = {Recently, subgraph GNNs have emerged as an important direction for developing expressive graph neural networks (GNNs). While numerous architectures have been proposed, so far there is still a limited understanding of how various design paradigms differ in terms of expressive power, nor is it clear what design principle achieves maximal expressiveness with minimal architectural complexity. To address these fundamental questions, this paper conducts a systematic study of general node-based subgraph GNNs through the lens of Subgraph Weisfeiler-Lehman Tests (SWL). Our central result is to build a complete hierarchy of SWL with strictly growing expressivity. Concretely, we prove that any node-based subgraph GNN falls into one of the six SWL equivalence classes, among which {\$}\mathsf{SSWL}{\$} achieves the maximal expressive power. We also study how these equivalence classes differ in terms of their practical expressiveness such as encoding graph distance and biconnectivity. Furthermore, we give a tight expressivity upper bound of all SWL algorithms by establishing a close relation with localized versions of WL and Folklore WL (FWL) tests. Our results provide insights into the power of existing subgraph GNNs, guide the design of new architectures, and point out their limitations by revealing an inherent gap with the 2-FWL test. Finally, experiments demonstrate that {\$}\mathsf{SSWL}{\$}-inspired subgraph GNNs can significantly outperform prior architectures on multiple benchmarks despite great simplicity.},
+ author = {Zhang, Bohang and Feng, Guhao and {Du Yiheng} and {Di He} and Wang, Liwei},
+ date = {14.02.2023},
+ title = {A Complete Expressiveness Hierarchy for Subgraph GNNs via Subgraph  Weisfeiler-Lehman Tests},
+ url = {http://arxiv.org/pdf/2302.07090v2},
+ keywords = {Computer Science - Computational Complexity;Computer Science - Computer Science and Game Theory;Computer Science - Learning},
+ file = {2302.07090v2:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\2302.07090v2.pdf:pdf}
+}
+
+
+@misc{Zhang.25.10.2021,
+ abstract = {Graph neural network (GNN)'s success in graph classification is closely related to the Weisfeiler-Lehman (1-WL) algorithm. By iteratively aggregating neighboring node features to a center node, both 1-WL and GNN obtain a node representation that encodes a rooted subtree around the center node. These rooted subtree representations are then pooled into a single representation to represent the whole graph. However, rooted subtrees are of limited expressiveness to represent a non-tree graph. To address it, we propose Nested Graph Neural Networks (NGNNs). NGNN represents a graph with rooted subgraphs instead of rooted subtrees, so that two graphs sharing many identical subgraphs (rather than subtrees) tend to have similar representations. The key is to make each node representation encode a subgraph around it more than a subtree. To achieve this, NGNN extracts a local subgraph around each node and applies a base GNN to each subgraph to learn a subgraph representation. The whole-graph representation is then obtained by pooling these subgraph representations. We provide a rigorous theoretical analysis showing that NGNN is strictly more powerful than 1-WL. In particular, we proved that NGNN can discriminate almost all r-regular graphs, where 1-WL always fails. Moreover, unlike other more powerful GNNs, NGNN only introduces a constant-factor higher time complexity than standard GNNs. NGNN is a plug-and-play framework that can be combined with various base GNNs. We test NGNN with different base GNNs on several benchmark datasets. NGNN uniformly improves their performance and shows highly competitive performance on all datasets.},
+ author = {Zhang, Muhan and Li, Pan},
+ date = {25.10.2021},
+ title = {Nested Graph Neural Networks},
+ url = {http://arxiv.org/pdf/2110.13197v1},
+ keywords = {Computer Science - Learning},
+ file = {2110.13197v1:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\2110.13197v1.pdf:pdf}
+}
+
+
+@misc{Zhao.07.10.2021,
+ abstract = {Message Passing Neural Networks (MPNNs) are a common type of Graph Neural Network (GNN), in which each node's representation is computed recursively by aggregating representations (messages) from its immediate neighbors akin to a star-shaped pattern. MPNNs are appealing for being efficient and scalable, how-ever their expressiveness is upper-bounded by the 1st-order Weisfeiler-Lehman isomorphism test (1-WL). In response, prior works propose highly expressive models at the cost of scalability and sometimes generalization performance. Our work stands between these two regimes: we introduce a general framework to uplift any MPNN to be more expressive, with limited scalability overhead and greatly improved practical performance. We achieve this by extending local aggregation in MPNNs from star patterns to general subgraph patterns (e.g.,k-egonets):in our framework, each node representation is computed as the encoding of a surrounding induced subgraph rather than encoding of immediate neighbors only (i.e. a star). We choose the subgraph encoder to be a GNN (mainly MPNNs, considering scalability) to design a general framework that serves as a wrapper to up-lift any GNN. We call our proposed method GNN-AK(GNN As Kernel), as the framework resembles a convolutional neural network by replacing the kernel with GNNs. Theoretically, we show that our framework is strictly more powerful than 1{\&}2-WL, and is not less powerful than 3-WL. We also design subgraph sampling strategies which greatly reduce memory footprint and improve speed while maintaining performance. Our method sets new state-of-the-art performance by large margins for several well-known graph ML tasks; specifically, 0.08 MAE on ZINC,74.79{\%} and 86.887{\%} accuracy on CIFAR10 and PATTERN respectively.},
+ author = {Zhao, Lingxiao and Jin, Wei and Akoglu, Leman and Shah, Neil},
+ date = {07.10.2021},
+ title = {From Stars to Subgraphs: Uplifting Any GNN with Local Structure  Awareness},
+ url = {http://arxiv.org/pdf/2110.03753v3},
+ keywords = {Computer Science - Learning;Statistics - Machine Learning},
+ file = {2110.03753v3:K\:\\citavi_projects\\Subgraph GNNs extended\\Citavi Attachments\\2110.03753v3.pdf:pdf}
+}
+
+

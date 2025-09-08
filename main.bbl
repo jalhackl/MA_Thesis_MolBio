@@ -1,0 +1,201 @@
+\begin{thebibliography}{10}
+
+\bibitem{Rogers.2010}
+David Rogers and Mathew Hahn.
+\newblock Extended-connectivity fingerprints.
+\newblock {\em Journal of chemical information and modeling}, 50(5):742--754,
+  2010.
+
+\bibitem{Duvenaud.30.09.2015}
+David Duvenaud, Dougal Maclaurin, Jorge Aguilera-Iparraguirre, Rafael
+  G{\'o}mez-Bombarelli, Timothy Hirzel, Al{\'a}n Aspuru-Guzik, and Ryan~P.
+  Adams.
+\newblock Convolutional networks on graphs for learning molecular fingerprints.
+
+\bibitem{Kearnes.2016}
+Steven Kearnes, Kevin McCloskey, Marc Berndl, Vijay Pande, and Patrick Riley.
+\newblock Molecular graph convolutions: moving beyond fingerprints.
+\newblock {\em Journal of computer-aided molecular design}, 30(8):595--608,
+  2016.
+
+\bibitem{Deng.2023}
+Jianyuan Deng, Zhibo Yang, Hehe Wang, Iwao Ojima, Dimitris Samaras, and Fusheng
+  Wang.
+\newblock A systematic study of key elements underlying molecular property
+  prediction.
+\newblock {\em Nature communications}, 14(1):6395, 2023.
+
+\bibitem{Menke.2021}
+Janosch Menke and Oliver Koch.
+\newblock Using domain-specific fingerprints generated through neural networks
+  to enhance ligand-based virtual screening.
+\newblock {\em Journal of chemical information and modeling}, 61(2):664--675,
+  2021.
+
+\bibitem{Sabando.2021}
+Mar{\'i}a~Virginia Sabando, Ignacio Ponzoni, Evangelos~E. Milios, and Axel~J.
+  Soto.
+\newblock Using molecular embeddings in qsar modeling: Does it make a
+  difference?
+\newblock 2021.
+
+\bibitem{Stepisnik.2021}
+Toma{\v{z}} Stepi{\v{s}}nik, Bla{\v{z}} {\v{S}}krlj, J{\"o}rg Wicker, and Dragi
+  Kocev.
+\newblock A comprehensive comparison of molecular feature representations for
+  use in predictive modeling.
+\newblock {\em Computers in biology and medicine}, 130:104197, 2021.
+
+\bibitem{Mayr.2018}
+Andreas Mayr, G{\"u}nter Klambauer, Thomas Unterthiner, Marvin Steijaert,
+  J{\"o}rg~K. Wegner, Hugo Ceulemans, Djork-Arn{\'e} Clevert, and Sepp
+  Hochreiter.
+\newblock Large-scale comparison of machine learning methods for drug target
+  prediction on chembl.
+\newblock {\em Chemical science}, 9(24):5441--5451, 2018.
+
+\bibitem{Jiang.2021}
+Dejun Jiang, Zhenxing Wu, Chang-Yu Hsieh, Guangyong Chen, Ben Liao, Zhe Wang,
+  Chao Shen, Dongsheng Cao, Jian Wu, and Tingjun Hou.
+\newblock Could graph neural networks learn better molecular representation for
+  drug discovery? a comparison study of descriptor-based and graph-based
+  models.
+\newblock {\em Journal of cheminformatics}, 13(1):12, 2021.
+
+\bibitem{Volkov.2022}
+Mikhail Volkov, Joseph-Andr{\'e} Turk, Nicolas Drizard, Nicolas Martin, Brice
+  Hoffmann, Yann Gaston-Math{\'e}, and Didier Rognan.
+\newblock On the frustration to predict binding affinities from protein-ligand
+  structures with deep neural networks.
+\newblock {\em Journal of medicinal chemistry}, 65(11):7946--7958, 2022.
+
+\bibitem{Yap.2011}
+Chun~Wei Yap.
+\newblock Padel-descriptor: an open source software to calculate molecular
+  descriptors and fingerprints.
+\newblock {\em Journal of computational chemistry}, 32(7):1466--1474, 2011.
+
+\bibitem{Capecchi.2020}
+Alice Capecchi, Daniel Probst, and Jean-Louis Reymond.
+\newblock One molecular fingerprint to rule them all: drugs, biomolecules, and
+  the metabolome.
+\newblock {\em Journal of cheminformatics}, 12(1):43, 2020.
+
+\bibitem{Morgan.1965}
+H.~L. Morgan.
+\newblock The generation of a unique machine description for chemical
+  structures-a technique developed at chemical abstracts service.
+\newblock {\em Journal of Chemical Documentation}, 5(2):107--113, 1965.
+
+\bibitem{Xu.01.10.2018}
+Keyulu Xu, Weihua Hu, Jure Leskovec, and Stefanie Jegelka.
+\newblock How powerful are graph neural networks?
+
+\bibitem{Hu.29.05.2019}
+Weihua Hu, Bowen Liu, Joseph Gomes, Marinka Zitnik, Percy Liang, Vijay Pande,
+  and Jure Leskovec.
+\newblock Strategies for pre-training graph neural networks.
+
+\bibitem{Velickovic.30.10.2017}
+Petar Veli{\v{c}}kovi{\'c}, Guillem Cucurull, Arantxa Casanova, Adriana Romero,
+  Pietro Li{\`o}, and Yoshua Bengio.
+\newblock Graph attention networks.
+
+\bibitem{Xiong.2020}
+Zhaoping Xiong, Dingyan Wang, Xiaohong Liu, Feisheng Zhong, Xiaozhe Wan, Xutong
+  Li, Zhaojun Li, Xiaomin Luo, Kaixian Chen, Hualiang Jiang, and Mingyue Zheng.
+\newblock Pushing the boundaries of molecular representation for drug discovery
+  with the graph attention mechanism.
+\newblock {\em Journal of medicinal chemistry}, 63(16):8749--8760, 2020.
+
+\bibitem{Zhang.2021}
+Xiao-Meng Zhang, Li~Liang, Lin Liu, and Ming-Jing Tang.
+\newblock Graph neural networks and their current applications in
+  bioinformatics.
+\newblock {\em Frontiers in genetics}, 12:690049, 2021.
+
+\bibitem{Stumpfe.2019}
+Dagmar Stumpfe, Huabin Hu, and J{\"u}rgen Bajorath.
+\newblock Evolving concept of activity cliffs.
+\newblock {\em ACS omega}, 4(11):14360--14368, 2019.
+
+\bibitem{Dablander.2023}
+Markus Dablander, Thierry Hanser, Renaud Lambiotte, and Garrett~M. Morris.
+\newblock Exploring qsar models for activity-cliff prediction.
+\newblock {\em Journal of cheminformatics}, 15(1):47, 2023.
+
+\bibitem{Zhang.2024}
+Qingtian Zhang, Dangxin Mao, Yusong Tu, and Yuan-Yan Wu.
+\newblock A new fingerprint and graph hybrid neural network for predicting
+  molecular properties.
+\newblock {\em Journal of chemical information and modeling},
+  64(15):5853--5866, 2024.
+
+\bibitem{vanTilborg.2022}
+Derek {van Tilborg}, Alisa Alenicheva, and Francesca Grisoni.
+\newblock Exposing the limitations of molecular machine learning with activity
+  cliffs.
+\newblock {\em Journal of chemical information and modeling},
+  62(23):5938--5951, 2022.
+
+\bibitem{Robinson.2020}
+Matthew~C. Robinson, Robert~C. Glen, and Alpha~A. Lee.
+\newblock Validating the validation: reanalyzing a large-scale comparison of
+  deep learning and machine learning models for bioactivity prediction.
+\newblock {\em Journal of computer-aided molecular design}, 34(7):717--730,
+  2020.
+
+\bibitem{Wu.2018}
+Zhenqin Wu, Bharath Ramsundar, Evan~N. Feinberg, Joseph Gomes, Caleb Geniesse,
+  Aneesh~S. Pappu, Karl Leswing, and Vijay Pande.
+\newblock Moleculenet: a benchmark for molecular machine learning.
+\newblock {\em Chemical science}, 9(2):513--530, 2018.
+
+\bibitem{Fang.2023}
+Cheng Fang, Ye~Wang, Richard Grater, Sudarshan Kapadnis, Cheryl Black, Patrick
+  Trapa, and Simone Sciabola.
+\newblock Prospective validation of machine learning algorithms for absorption,
+  distribution, metabolism, and excretion prediction: An industrial
+  perspective.
+\newblock {\em Journal of chemical information and modeling},
+  63(11):3263--3274, 2023.
+
+\bibitem{Paszke.03.12.2019}
+Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory
+  Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban
+  Desmaison, Andreas K{\"o}pf, Edward Yang, Zach DeVito, Martin Raison, Alykhan
+  Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu~Fang, Junjie Bai, and Soumith
+  Chintala.
+\newblock Pytorch: An imperative style, high-performance deep learning library.
+
+\bibitem{Wang.28.11.2023}
+Xiyuan Wang and Muhan Zhang.
+\newblock Pytorch geometric high order: A unified library for high order graph
+  neural network.
+
+\bibitem{Akiba.25.07.2019}
+Takuya Akiba, Shotaro Sano, Toshihiko Yanase, Takeru Ohta, and Masanori Koyama.
+\newblock Optuna: A next-generation hyperparameter optimization framework.
+
+\bibitem{Yuan.2023}
+Chunyu Yuan and Sos~S. Agaian.
+\newblock A comprehensive review of binary neural network.
+\newblock {\em Artificial Intelligence Review}, 56(11):12949--13013, 2023.
+
+\bibitem{Bengio.15.08.2013}
+Yoshua Bengio, Nicholas L{\'e}onard, and Aaron Courville.
+\newblock Estimating or propagating gradients through stochastic neurons for
+  conditional computation.
+
+\bibitem{Schweidtmann.2023}
+Artur~M. Schweidtmann, Jan~G. Rittig, Jana~M. Weber, Martin Grohe, Manuel
+  Dahmen, Kai Leonhard, and Alexander Mitsos.
+\newblock Physical pooling functions in graph neural networks for molecular
+  property prediction.
+\newblock {\em Computers {\&} Chemical Engineering}, 172:108202, 2023.
+
+\bibitem{Li.12.09.2017}
+Junying Li, Deng Cai, and Xiaofei He.
+\newblock Learning graph-level representation for drug discovery.
+
+\end{thebibliography}

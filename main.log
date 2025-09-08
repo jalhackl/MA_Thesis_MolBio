@@ -1,0 +1,2087 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.7.2)  8 SEP 2025 04:30
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/josef/Downloads/Master_Molekulare_Biologie/main.tex
+(c:/Users/josef/Downloads/Master_Molekulare_Biologie/main.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-18> (c:/Users/josef/Downloads/Master_Molekulare_Biologie/UniVieCS_Thesis.cls
+Document Class: UniVieCS_Thesis 2021/06/22 UniVie Computer Science template for the Master's Thesis
+(d:/texlive/2020/texmf-dist/tex/latex/koma-script/scrbook.cls
+Document Class: scrbook 2020/04/19 v3.30 KOMA-Script document class (book)
+(d:/texlive/2020/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2020/04/19 v3.30 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (d:/texlive/2020/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/04/19 v3.30 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (d:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (d:/texlive/2020/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/04/19 v3.30 KOMA-Script package (loading files)
+))) (d:/texlive/2020/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2020/04/19 v3.30 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box45
+)
+Package tocbasic Info: babel extension for `toc' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 137.
+Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input line 2427.
+ (d:/texlive/2020/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2020/04/19 v3.30 KOMA-Script font size class option (11pt)
+) (d:/texlive/2020/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2020/04/19 v3.30 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count167
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 47.2316pt
+(typearea)              \oddsidemargin  = -12.5192pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1738.
+)
+\c@part=\count168
+\c@chapter=\count169
+\c@section=\count170
+\c@subsection=\count171
+\c@subsubsection=\count172
+\c@paragraph=\count173
+\c@subparagraph=\count174
+\scr@dte@chapter@maxnumwidth=\skip53
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\chapter on input line 5586.
+\scr@dte@section@maxnumwidth=\skip54
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\section on input line 5596.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\section on input line 5596.
+\scr@dte@part@maxnumwidth=\skip55
+Class scrbook Info: using compatibility default `afterindent=true'
+(scrbook)           for `\part on input line 5605.
+\scr@dte@subsection@maxnumwidth=\skip56
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsection on input line 5615.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsection on input line 5615.
+\scr@dte@subsubsection@maxnumwidth=\skip57
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsubsection on input line 5625.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsubsection on input line 5625.
+\scr@dte@paragraph@maxnumwidth=\skip58
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\paragraph on input line 5635.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\paragraph on input line 5635.
+\scr@dte@subparagraph@maxnumwidth=\skip59
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subparagraph on input line 5645.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subparagraph on input line 5645.
+\abovecaptionskip=\skip60
+\belowcaptionskip=\skip61
+\c@pti@nb@sid@b@x=\box46
+Package tocbasic Info: babel extension for `lof' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6887.
+\scr@dte@figure@maxnumwidth=\skip62
+\c@figure=\count175
+Package tocbasic Info: babel extension for `lot' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6908.
+\scr@dte@table@maxnumwidth=\skip63
+\c@table=\count176
+Class scrbook Info: Redefining `\numberline' on input line 7081.
+\bibindent=\dimen134
+) (d:/texlive/2020/texmf-dist/tex/latex/pdfx/pdfx.sty
+Package: pdfx 2019/02/27 v1.6.3 PDF/X and PDF/A support (CVR/HTH/RRM/PS)
+\pdfx@minorversion=\count177
+ (d:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+) (d:/texlive/2020/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (d:/texlive/2020/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (d:/texlive/2020/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+) (d:/texlive/2020/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+){d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} (d:/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (d:/texlive/2020/texmf-dist/tex/latex/pdfx/l8u-penc.def
+File: l8u-penc.def 2017/06/23 v0.8 Custom LaTeX file, for UTF8 encoded letters and symbols
+LaTeX Info: Composite with undeclared \b in encoding L8U on input line 278.
+)
+\pdfxsafeforxmp@toks=\toks18
+ (d:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (d:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (d:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+\pdfx@tmptoks=\toks19
+ (d:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+ (d:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (d:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (d:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (d:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (d:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (d:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (d:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (d:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (d:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (d:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen135
+\Hy@linkcounter=\count178
+\Hy@pagecounter=\count179
+ (d:/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+) (d:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (d:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count180
+Package hyperref Info: Option `pdfa' set `true' on input line 4338.
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count181
+ (d:/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen136
+ (d:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (d:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count182
+\Field@Width=\dimen137
+\Fld@charsize=\dimen138
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode ON on input line 6375.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+ (d:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count183
+\c@Item=\count184
+\c@Hfootnote=\count185
+)
+Package hyperref Info: Driver: hpdftex.
+ (d:/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+ (d:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count186
+\c@bookmark@seq@number=\count187
+ (d:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (d:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip64
+)
+Package hyperref Info: Option `unicode' set `true' on input line 1463.
+ (d:/texlive/2020/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
+) (d:/texlive/2020/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+Package hyperref Info: Option `psdextra' set `true' on input line 1465.
+ (d:/texlive/2020/texmf-dist/tex/latex/hyperref/psdextra.def
+File: psdextra.def 2020-05-15 v7.00e Hyperref: Additions to PDF string support
+) (d:/texlive/2020/texmf-dist/tex/generic/colorprofiles/colorprofiles.sty
+Package: colorprofiles 2018/11/01 v1.0.1 color profiles for PDF/X and PDF/A support
+ (d:/texlive/2020/texmf-dist/tex/generic/colorprofiles/colorprofiles.tex)) (d:/texlive/2020/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+) (d:/texlive/2020/texmf-dist/tex/latex/pdfx/AdobeColorProfiles.tex) (d:/texlive/2020/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+** pdfx: No file main.xmpdata . Metadata will be incomplete!
+<<sRGB.icc>> (d:/texlive/2020/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+Package hyperref Info: Option `unicode' set `true' on input line 2411.
+Package hyperref Info: Option `unicode' set `true' on input line 2412.
+ (d:/texlive/2020/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (d:/texlive/2020/texmf-dist/tex/latex/pdfx/glyphtounicode-cmr.tex) (d:/texlive/2020/texmf-dist/tex/latex/pdfx/glyphtounicode-ntx.tex) (d:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (d:/texlive/2020/texmf-dist/tex/latex/xmpincl/xmpincl.sty
+Package: xmpincl 2008/05/10 v2.2 Include XMP data in pdflatex
+) (d:/texlive/2020/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+Using XMP template file: pdfa.xmp
+\xmpinclWrite=\write3
+\xmpinclRead=\read2
+\openout3 = `pdfa.xmpi'.
+
+<<pdfa.xmpi>>) (d:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (d:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (d:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (d:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+) (d:/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (d:/texlive/2020/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count188
+\cp@tempcnt=\count189
+) (d:/texlive/2020/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
+\MT@toks=\toks20
+\MT@count=\count190
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen141
+LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
+\MT@listname@count=\count191
+ (d:/texlive/2020/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 914.
+LaTeX Info: Redefining \lslig on input line 914.
+\MT@outer@space=\skip65
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (d:/texlive/2020/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
+)) (d:/texlive/2020/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2020/01/24 v 0.09 modify URL breaks
+) (d:/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (d:/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count192
+\Gm@cntv=\count193
+\c@Gm@tempcnt=\count194
+\Gm@bindingoffset=\dimen142
+\Gm@wd@mp=\dimen143
+\Gm@odd@mp=\dimen144
+\Gm@even@mp=\dimen145
+\Gm@layoutwidth=\dimen146
+\Gm@layoutheight=\dimen147
+\Gm@layouthoffset=\dimen148
+\Gm@layoutvoffset=\dimen149
+\Gm@dimlist=\toks21
+) (d:/texlive/2020/texmf-dist/tex/latex/tools/layout.sty
+Package: layout 2014/10/28 v1.2c Show layout parameters
+\oneinch=\count195
+\cnt@paperwidth=\count196
+\cnt@paperheight=\count197
+\cnt@hoffset=\count198
+\cnt@voffset=\count199
+\cnt@textheight=\count266
+\cnt@textwidth=\count267
+\cnt@topmargin=\count268
+\cnt@oddsidemargin=\count269
+\cnt@evensidemargin=\count270
+\cnt@headheight=\count271
+\cnt@headsep=\count272
+\cnt@marginparsep=\count273
+\cnt@marginparwidth=\count274
+\cnt@marginparpush=\count275
+\cnt@footskip=\count276
+\fheight=\count277
+\ref@top=\count278
+\ref@hoffset=\count279
+\ref@voffset=\count280
+\ref@head=\count281
+\ref@body=\count282
+\ref@foot=\count283
+\ref@margin=\count284
+\ref@marginwidth=\count285
+\ref@marginpar=\count286
+\Interval=\count287
+\ExtraYPos=\count288
+\PositionX=\count289
+\PositionY=\count290
+\ArrowLength=\count291
+)) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/packages_macros.tex (d:/texlive/2020/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count292
+\algocf@hangindent=\skip66
+ (d:/texlive/2020/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count293
+LaTeX Info: Redefining \checkoddpage on input line 45.
+) (d:/texlive/2020/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (d:/texlive/2020/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip67
+\skiplinenumber=\skip68
+\skiprule=\skip69
+\skiphlne=\skip70
+\skiptext=\skip71
+\skiplength=\skip72
+\algomargin=\skip73
+\skipalgocfslide=\skip74
+\algowidth=\dimen150
+\inoutsize=\dimen151
+\inoutindent=\dimen152
+\interspacetitleruled=\dimen153
+\interspacealgoruled=\dimen154
+\interspacetitleboxruled=\dimen155
+\algocf@ruledwidth=\skip75
+\algocf@inoutbox=\box47
+\algocf@inputbox=\box48
+\AlCapSkip=\skip76
+\AlCapHSkip=\skip77
+\algoskipindent=\skip78
+\algocf@nlbox=\box49
+\algocf@hangingbox=\box50
+\algocf@untilbox=\box51
+\algocf@skipuntil=\skip79
+\algocf@capbox=\box52
+\algocf@lcaptionbox=\skip80
+\algoheightruledefault=\skip81
+\algoheightrule=\skip82
+\algotitleheightruledefault=\skip83
+\algotitleheightrule=\skip84
+\c@algocfline=\count294
+\c@algocfproc=\count295
+\c@algocf=\count296
+\algocf@algoframe=\box53
+\algocf@algobox=\box54
+) (d:/texlive/2020/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2020/03/19 v4.46 (NLCT)
+ (d:/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (d:/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex (d:/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
+)
+\XKV@depth=\count297
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (d:/texlive/2020/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+ (d:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+)
+\@glsmfirst=\toks24
+\@glsmrest=\toks25
+) (d:/texlive/2020/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
+) (d:/texlive/2020/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (d:/texlive/2020/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+ (d:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip85
+
+For additional information on amsmath, use the `?' option.
+(d:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (d:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen156
+)) (d:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen157
+) (d:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count299
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count300
+\leftroot@=\count301
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count302
+\DOTSCASE@=\count303
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+\big@size=\dimen158
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count304
+\c@MaxMatrixCols=\count305
+\dotsspace@=\muskip17
+\c@parentequation=\count306
+\dspbrk@lvl=\count307
+\tag@help=\toks27
+\row@=\count308
+\column@=\count309
+\maxfields@=\count310
+\andhelp@=\toks28
+\eqnshift@=\dimen159
+\alignsep@=\dimen160
+\tagshift@=\dimen161
+\tagwidth@=\dimen162
+\totwidth@=\dimen163
+\lineht@=\dimen164
+\@envbody=\toks29
+\multlinegap=\skip86
+\multlinetaggap=\skip87
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (d:/texlive/2020/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count311
+) (d:/texlive/2020/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+ (d:/texlive/2020/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (d:/texlive/2020/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count312
+) (d:/texlive/2020/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count313
+\FP@xia=\count314
+\FP@xib=\count315
+\FP@xfa=\count316
+\FP@xfb=\count317
+\FP@rega=\count318
+\FP@regb=\count319
+\FP@regs=\count320
+\FP@times=\count321
+) (d:/texlive/2020/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+) (d:/texlive/2020/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+) (d:/texlive/2020/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+) (d:/texlive/2020/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (d:/texlive/2020/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+) (d:/texlive/2020/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count322
+) (d:/texlive/2020/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (d:/texlive/2020/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+) (d:/texlive/2020/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks31
+\@dtl@tmpcount=\count323
+\dtl@tmplength=\skip88
+\dtl@sortresult=\count324
+\@dtl@numgrpsepcount=\count325
+\@dtl@datatype=\count326
+\dtl@codeA=\count327
+\dtl@codeB=\count328
+\@dtl@foreach@level=\count329
+) (d:/texlive/2020/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-307.sty
+Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
+)
+\gls@level=\count330
+\@gls@tmpb=\toks32
+\gls@tmplen=\skip89
+\glskeylisttok=\toks33
+\glslabeltok=\toks34
+\glsshorttok=\toks35
+\glslongtok=\toks36
+ (d:/texlive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
+Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
+) (d:/texlive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2020/03/19 v4.46 (NLCT)
+\glslistdottedwidth=\skip90
+) (d:/texlive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2020/03/19 v4.46 (NLCT)
+ (d:/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip91
+\LTright=\skip92
+\LTpre=\skip93
+\LTpost=\skip94
+\LTchunksize=\count331
+\LTcapwidth=\dimen165
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@cols=\count332
+\LT@rows=\count333
+\c@LT@tables=\count334
+\c@LT@chunks=\count335
+\LT@p@ftn=\toks37
+)
+Class scrbook Info: longtable captions redefined on input line 43.
+\glsdescwidth=\skip95
+\glspagelistwidth=\skip96
+) (d:/texlive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2020/03/19 v4.46 (NLCT)
+ (d:/texlive/2020/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count336
+\ST@wd=\dimen166
+\ST@rightskip=\skip97
+\ST@leftskip=\skip98
+\ST@parfillskip=\skip99
+\ST@pageleft=\dimen167
+\ST@headht=\dimen168
+\ST@tailht=\dimen169
+\ST@pagesofar=\dimen170
+\ST@pboxht=\dimen171
+\ST@lineht=\dimen172
+\ST@prevht=\dimen173
+\ST@toadd=\dimen174
+\ST@dimen=\dimen175
+\ST@pbox=\box61
+)) (d:/texlive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2020/03/19 v4.46 (NLCT)
+\glstreeindent=\skip100
+)) (d:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count337
+\lst@gtempboxa=\box62
+\lst@token=\toks38
+\lst@length=\count338
+\lst@currlwidth=\dimen176
+\lst@column=\count339
+\lst@pos=\count340
+\lst@lostspace=\dimen177
+\lst@width=\dimen178
+\lst@newlines=\count341
+\lst@lineno=\count342
+\lst@maxwidth=\dimen179
+ (d:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count343
+\lst@skipnumbers=\count344
+\lst@framebox=\box63
+) (d:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (d:/texlive/2020/texmf-dist/tex/latex/fixme/fixme.sty
+Package: fixme 2019/01/03 v4.5 Collaborative annotations for LaTeX2e
+ (d:/texlive/2020/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks39
+\verbatim@line=\toks40
+\verbatim@in@stream=\read3
+)
+\lox@file=\read4
+\c@fixmecount=\count345
+\c@fxnotecount=\count346
+\c@fxwarningcount=\count347
+\c@fxerrorcount=\count348
+\c@fxfatalcount=\count349
+Package tocbasic Info: babel extension for `lox' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 711.
+
+
+Package FiXme Warning: marginclue layout requested;
+(FiXme)                turning margin layout off on input line 732.
+
+) (d:/texlive/2020/texmf-dist/tex/latex/fixme/themes/fxthemecolorsig.sty
+Package: fxthemecolorsig 
+ (d:/texlive/2020/texmf-dist/tex/latex/fixme/layouts/env/fxenvlayoutcolorsig.sty
+Package: fxenvlayoutcolorsig 
+) (d:/texlive/2020/texmf-dist/tex/latex/fixme/layouts/target/fxtargetlayoutcolor.sty
+Package: fxtargetlayoutcolor 
+))) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/C) Back Matter/acronyms.tex) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/C) Back Matter/glossary.tex)
+\glswrite=\write4
+\glo@main@file=\write5
+\openout5 = `main.glo'.
+
+Package glossaries Info: Writing glossary file main.glo on input line 10.
+\glo@acronym@file=\write6
+\openout6 = `main.acn'.
+
+Package glossaries Info: Writing glossary file main.acn on input line 10.
+ (d:/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/06/10 3.45 The Babel package
+ (d:/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/06/10 3.45 Babel common definitions
+\babel@savecnt=\count350
+\U@D=\dimen180
+\l@babelnohyphens=\language86
+ (d:/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read5
+)
+\bbl@dirlevel=\count351
+ (d:/texlive/2020/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthography)
+ (d:/texlive/2020/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthography)
+Package babel Info: Making " an active character on input line 121.
+)) (d:/texlive/2020/texmf-dist/tex/generic/babel-english/british.ldf
+Language: british 2017/06/06 v3.3r English support from the babel system
+ (d:/texlive/2020/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 108.
+))) (d:/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip101
+\bibsep=\skip102
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count352
+) (d:/texlive/2020/texmf-dist/tex/latex/doi/doi.sty
+Package: doi 2018/09/09 handle doi numbers
+) (d:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+) (d:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count353
+\l__pdf_internal_box=\box64
+) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+Package scrbase Info: activating british \contentsname on input line 22.
+Package scrbase Info: activating british \listfigurename on input line 22.
+Package scrbase Info: activating british \listtablename on input line 22.
+ ABD: EveryShipout initializing macros (d:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count354
+\scratchdimen=\dimen181
+\scratchbox=\box65
+\nofMPsegments=\count355
+\nofMParguments=\count356
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count357
+\MPscratchDim=\dimen182
+\MPnumerator=\count358
+\makeMPintoPDFobject=\count359
+\everyMPtoPDFconversion=\toks42
+) (d:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (d:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\AtBeginShipoutBox=\box66
+Package hyperref Info: Link coloring OFF on input line 22.
+ (d:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (d:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (d:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count360
+)
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
+\@outlinefile=\write7
+\openout7 = `main.out'.
+
+Class scrbook Info: loading recommended package `bookmark'.
+(scrbook)           Using `bookmark' together with `hyperref' is recommended,
+(scrbook)           because of handling of possible bookmark level gaps.
+(scrbook)           You can avoid loading `bookmark' with KOMA-Script option
+(scrbook)           `bookmarkpackage=false' before \begin{document} and
+(scrbook)           you can avoid this message adding:
+(scrbook)             \usepackage{bookmark}
+(scrbook)           before \begin{document} on input line 22.
+ (d:/texlive/2020/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
+ (d:/texlive/2020/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
+Package auxhook Info: \AddLineBeginMainAux comes a little late,
+(auxhook)             because the main .aux file is already opened on input line 168.
+\BKM@id=\count361
+))
+LaTeX Info: Redefining \microtypecontext on input line 22.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+LaTeX Info: Redefining \showhyphens on input line 22.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (d:/texlive/2020/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25372pt, 107.55255pt)
+* v-part:(T,H,B)=(101.40665pt, 591.53027pt, 152.11002pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=418.25372pt
+* \textheight=591.53027pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28256pt
+* \topmargin=-8.26335pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=89.62619pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count362
+(c:/Users/josef/Downloads/Master_Molekulare_Biologie/A) Front Matter/titlepage.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25372pt, 107.55255pt)
+* v-part:(T,H,B)=(101.40665pt, 740.79485pt, 2.84544pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=418.25372pt
+* \textheight=740.79485pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28256pt
+* \topmargin=-8.26335pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=89.62619pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 28.
+ (d:/texlive/2020/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<figures/logo_nontransparent.jpg, id=6, 207.6558pt x 57.0933pt>
+File: figures/logo_nontransparent.jpg Graphic file (type jpg)
+<use figures/logo_nontransparent.jpg>
+Package pdftex.def Info: figures/logo_nontransparent.jpg  used on input line 28.
+(pdftex.def)             Requested size: 220.22202pt x 60.5517pt.
+
+Overfull \hbox (22.5223pt too wide) in paragraph at lines 28--28
+[]|  [] 
+ []
+
+
+Overfull \hbox (1.65042pt too wide) in paragraph at lines 28--28
+ [][] 
+ []
+
+[1
+
+\openout4 = `main.ist'.
+
+
+
+
+ <c:/Users/josef/Downloads/Master_Molekulare_Biologie/figures/logo_nontransparent.jpg>]) [2
+
+
+
+
+] (c:/Users/josef/Downloads/Master_Molekulare_Biologie/A) Front Matter/abstracts.tex
+chapter without number
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface.
+
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 4.
+(d:/texlive/2020/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/A) Front Matter/kurzfassung.tex [1
+
+
+] [2
+
+
+]
+chapter without number
+[3]) [4
+
+
+
+]
+Package tocbasic Info: character protrusion at toc deactivated on input line 40.
+\tf@toc=\write8
+\openout8 = `main.toc'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5] [6
+
+
+] (c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/introduction.tex
+chapter 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 
+      [1
+
+
+]
+
+Package natbib Warning: Citation `Rogers.2010' on page 2 undefined on input line 20.
+
+
+Package natbib Warning: Citation `Duvenaud.30.09.2015' on page 2 undefined on input line 22.
+
+
+Package natbib Warning: Citation `Kearnes.2016' on page 2 undefined on input line 22.
+
+
+Package natbib Warning: Citation `Deng.2023' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `Menke.2021' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `Sabando.2021' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `Stepisnik.2021' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `Mayr.2018' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `Jiang.2021' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `Volkov.2022' on page 2 undefined on input line 23.
+
+
+Underfull \vbox (badness 1264) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28 
+      [2]) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex [3] [4
+
+
+]
+chapter 2.
+
+Package natbib Warning: Citation `Yap.2011' on page 5 undefined on input line 9.
+
+
+Package natbib Warning: Citation `Capecchi.2020' on page 5 undefined on input line 10.
+
+
+Package natbib Warning: Citation `Rogers.2010' on page 5 undefined on input line 14.
+
+
+Package natbib Warning: Citation `Morgan.1965' on page 5 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:morgan_radius' on page 5 undefined on input line 30.
+
+
+LaTeX Warning: Reference `fig:styrene_all_subs_morgan' on page 5 undefined on input line 30.
+
+[5]
+<morgan_radius.png, id=76, 1270.7475pt x 734.745pt>
+File: morgan_radius.png Graphic file (type png)
+<use morgan_radius.png>
+Package pdftex.def Info: morgan_radius.png  used on input line 37.
+(pdftex.def)             Requested size: 418.25372pt x 241.83876pt.
+<styrene_all_subs_morgan.png, id=78, 602.25pt x 903.375pt>
+File: styrene_all_subs_morgan.png Graphic file (type png)
+<use styrene_all_subs_morgan.png>
+Package pdftex.def Info: styrene_all_subs_morgan.png  used on input line 45.
+(pdftex.def)             Requested size: 418.25372pt x 627.4096pt.
+
+
+LaTeX Warning: Float too large for page by 63.55937pt on input line 48.
+
+<substructures_radius1_only_topology.png, id=79, 602.25pt x 752.8125pt>
+File: substructures_radius1_only_topology.png Graphic file (type png)
+<use substructures_radius1_only_topology.png>
+Package pdftex.def Info: substructures_radius1_only_topology.png  used on input line 52.
+(pdftex.def)             Requested size: 418.25372pt x 522.84132pt.
+[6 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/morgan_radius.png>] [7 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/styrene_all_subs_morgan.png>] [8 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/substructures_radius1_only_topology.png>] [9]
+
+Package natbib Warning: Citation `Xu.01.10.2018' on page 10 undefined on input line 104.
+
+
+Package natbib Warning: Citation `Hu.29.05.2019' on page 10 undefined on input line 133.
+
+[10]
+
+Package natbib Warning: Citation `Velickovic.30.10.2017' on page 11 undefined on input line 172.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:177: Missing $ inserted.
+<inserted text> 
+                $
+l.177 e_
+        {ij} = \text{LeakyReLU}\left( \mathbf{a}^\top \left[ \mathbf{W} \mat...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:178: Missing $ inserted.
+<inserted text> 
+                $
+l.178 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:183: Missing $ inserted.
+<inserted text> 
+                $
+l.183 \alpha
+            _{ij} = \text{softmax}_j(e_{ij}) = \frac{\exp(e_{ij})}{\sum_{k \...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:184: Missing $ inserted.
+<inserted text> 
+                $
+l.184 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:189: LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \mathbf
+             {h}_i \in \mathbb{R}^F
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:189: Missing $ inserted.
+<inserted text> 
+                $
+l.189 \mathbf{h}_
+                 i \in \mathbb{R}^F
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:189: Undefined control sequence.
+l.189 \mathbf{h}_i \in \mathbb
+                              {R}^F
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:190: Missing $ inserted.
+<inserted text> 
+                $
+l.190 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:191: LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \mathbf
+             {h}_i' = \mathbf{W} \mathbf{h}_i
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:191: Missing $ inserted.
+<inserted text> 
+                $
+l.191 \mathbf{h}_
+                 i' = \mathbf{W} \mathbf{h}_i
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:192: Missing $ inserted.
+<inserted text> 
+                $
+l.192 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:197: LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 \mathbf
+             {h}_i^{\text{(new)}} = \sigma \left( \sum_{j \in \mathcal{N}(i)...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[11]
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:197: Missing $ inserted.
+<inserted text> 
+                $
+l.197 \mathbf{h}_
+                 i^{\text{(new)}} = \sigma \left( \sum_{j \in \mathcal{N}(i)...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:198: Missing $ inserted.
+<inserted text> 
+                $
+l.198 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:200: LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 \mathbf
+             {h}_i^{\text{(new)}} = \sigma \left( \frac{1}{K} \sum_{k=1}^{K}...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:200: Missing $ inserted.
+<inserted text> 
+                $
+l.200 \mathbf{h}_
+                 i^{\text{(new)}} = \sigma \left( \frac{1}{K} \sum_{k=1}^{K}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:201: Missing $ inserted.
+<inserted text> 
+                $
+l.201 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:203: LaTeX Error: \mathcal allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203 \mathcal
+              {L} = - \sum_{i \in \mathcal{V}} \sum_{c=1}^{C} y_{ic} \log \h...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:203: Missing $ inserted.
+<inserted text> 
+                $
+l.203 \mathcal{L} = - \sum
+                          _{i \in \mathcal{V}} \sum_{c=1}^{C} y_{ic} \log \h...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:204: Missing $ inserted.
+<inserted text> 
+                $
+l.204 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Package natbib Warning: Citation `Brody.30.05.2021b' on page 12 undefined on input line 205.
+
+
+Package natbib Warning: Citation `Velickovic.30.10.2017' on page 12 undefined on input line 208.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:232: Undefined control sequence.
+l.232 Here, \( \mathbf{h}_i \in \mathbb
+                                       {R}^F \) represents the initial featu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package natbib Warning: Citation `Brody.30.05.2021b' on page 12 undefined on input line 240.
+
+
+Package natbib Warning: Citation `Duvenaud.30.09.2015' on page 12 undefined on input line 251.
+
+
+Package natbib Warning: Citation `Duvenaud.30.09.2015' on page 12 undefined on input line 251.
+
+[12]
+
+Package natbib Warning: Citation `Xiong.2020' on page 13 undefined on input line 269.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:279: Undefined control sequence.
+<argument> |>{\raggedright \arraybackslash 
+                                           }p{3.5cm}|>{\centering \arrayback...
+l.279 ...m}|>{\raggedright\arraybackslash}p{7cm}|}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:279: Undefined control sequence.
+<argument> ...3.5cm}|>{\centering \arraybackslash 
+                                                  }p{1cm}|>{\raggedright \ar...
+l.279 ...m}|>{\raggedright\arraybackslash}p{7cm}|}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:279: Undefined control sequence.
+<argument> ...1cm}|>{\raggedright \arraybackslash 
+                                                  }p{7cm}|
+l.279 ...m}|>{\raggedright\arraybackslash}p{7cm}|}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:279: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 ...m}|>{\raggedright\arraybackslash}p{7cm}|}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:279: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 ...m}|>{\raggedright\arraybackslash}p{7cm}|}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:279: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 ...m}|>{\raggedright\arraybackslash}p{7cm}|}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:279: LaTeX Error:  Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 ...m}|>{\raggedright\arraybackslash}p{7cm}|}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+\T1/cmr/m/n/10.95 (+20) bonds [0,1,2,3,4,5]
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 289--290
+[]\T1/cmr/m/n/10.95 (+20) Number of rad-ical
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 291--292
+\T1/cmr/m/n/10.95 (+20) sp$[]$d$[]$, other] (one-
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 293--294
+[]\T1/cmr/m/n/10.95 (+20) Whether the atom
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 293--294
+\T1/cmr/m/n/10.95 (+20) is part of an aro-
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 293--294
+\T1/cmr/m/n/10.95 (+20) matic sys-tem [0/1]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+[]\T1/cmr/m/n/10.95 (+20) [StereoNone, Ste-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+\T1/cmr/m/n/10.95 (+20) reoAny, Ste-reoZ,
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `Morris.04.10.2018' on page 13 undefined on input line 319.
+
+
+Underfull \vbox (badness 1867) has occurred while \output is active []
+
+ [13]
+
+LaTeX Warning: Text page 14 contains only floats.
+
+
+Underfull \vbox (badness 6428) has occurred while \output is active []
+
+ [14]
+
+Package natbib Warning: Citation `Zhang.2021' on page 15 undefined on input line 323.
+
+
+Package natbib Warning: Citation `Zhang.2021' on page 15 undefined on input line 334.
+
+
+Package natbib Warning: Citation `Zhang.2021' on page 15 undefined on input line 337.
+
+
+Package natbib Warning: Citation `Stumpfe.2019' on page 15 undefined on input line 346.
+
+
+Package natbib Warning: Citation `Maggiora.2006' on page 15 undefined on input line 346.
+
+
+Package natbib Warning: Citation `Jiang.2021' on page 15 undefined on input line 353.
+
+
+Package natbib Warning: Citation `Jiang.2021' on page 15 undefined on input line 354.
+
+[15]
+
+Package natbib Warning: Citation `Dablander.2023' on page 16 undefined on input line 361.
+
+
+Package natbib Warning: Citation `Stepisnik.2021' on page 16 undefined on input line 363.
+
+
+Package natbib Warning: Citation `Deng.2023' on page 16 undefined on input line 365.
+
+
+Package natbib Warning: Citation `Jiang.2021' on page 16 undefined on input line 371.
+
+
+Package natbib Warning: Citation `Duvenaud.30.09.2015' on page 16 undefined on input line 377.
+
+
+Package natbib Warning: Citation `Zhang.2024' on page 16 undefined on input line 379.
+
+[16]
+
+Package natbib Warning: Citation `Zhang.2024' on page 17 undefined on input line 381.
+
+
+Package natbib Warning: Citation `vanTilborg.2022' on page 17 undefined on input line 383.
+
+
+Package natbib Warning: Citation `Zhang.2024' on page 17 undefined on input line 386.
+
+
+Package natbib Warning: Citation `Wallach.2018' on page 17 undefined on input line 389.
+
+
+Package natbib Warning: Citation `Robinson.2020' on page 17 undefined on input line 391.
+
+
+Package natbib Warning: Citation `JunXia.2023' on page 17 undefined on input line 401.
+
+
+Package natbib Warning: Citation `CortesCiriano.2019' on page 17 undefined on input line 411.
+
+
+Package natbib Warning: Citation `CortesCiriano.2019' on page 17 undefined on input line 411.
+
+[17]
+
+Package natbib Warning: Citation `TranNguyen.2020' on page 18 undefined on input line 418.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:419: Package inputenc Error: Unicode character − (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.419 ...s accurate as those trained on protein−
+                                                  ligand attributes, evidenc...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/theory.tex:419: Package inputenc Error: Unicode character − (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.419 ... anything about the physics of protein−
+                                                  ligand interactions. Strik...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package natbib Warning: Citation `TranNguyen.2020' on page 18 undefined on input line 419.
+
+) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex [18]
+chapter 3.
+
+Package natbib Warning: Citation `Volkov.2022' on page 19 undefined on input line 17.
+
+
+Package natbib Warning: Citation `Wu.2018' on page 19 undefined on input line 23.
+
+
+Package natbib Warning: Citation `Hu.02.05.2020' on page 19 undefined on input line 26.
+
+
+Package natbib Warning: Citation `Hu.02.05.2020' on page 19 undefined on input line 28.
+
+[19
+
+
+]
+
+Package natbib Warning: Citation `Hu.02.05.2020' on page 20 undefined on input line 31.
+
+
+Package natbib Warning: Citation `Delaney.2004' on page 20 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Delaney.2004' on page 20 undefined on input line 39.
+
+
+Package natbib Warning: Citation `Mobley.2014' on page 20 undefined on input line 49.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex:70: Package inputenc Error: Unicode character β (U+03B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ...formation of myelin sheaths and also in β
+                                                  -amyloid formation which i...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[20]
+
+LaTeX Warning: Reference `fig:zinc_descr' on page 21 undefined on input line 87.
+
+<zinc_descr.png, id=187, 608.2725pt x 227.85126pt>
+File: zinc_descr.png Graphic file (type png)
+<use zinc_descr.png>
+Package pdftex.def Info: zinc_descr.png  used on input line 93.
+(pdftex.def)             Requested size: 313.69029pt x 117.50636pt.
+
+Package natbib Warning: Citation `Fang.2023' on page 21 undefined on input line 100.
+
+
+Package natbib Warning: Citation `Fang.2023' on page 21 undefined on input line 101.
+
+[21 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/zinc_descr.png>]
+
+Package natbib Warning: Citation `Fang.2023' on page 22 undefined on input line 104.
+
+
+LaTeX Warning: Reference `adme_value_distribution' on page 22 undefined on input line 107.
+
+<adme_value_distribution.png, id=198, 738.76pt x 379.4175pt>
+File: adme_value_distribution.png Graphic file (type png)
+<use adme_value_distribution.png>
+Package pdftex.def Info: adme_value_distribution.png  used on input line 111.
+(pdftex.def)             Requested size: 460.08163pt x 236.29008pt.
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 111--112
+ [][] 
+ []
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex:118: Undefined control sequence.
+<argument> |>{\raggedright \arraybackslash 
+                                           }p{5cm}|>{\raggedleft \arraybacks...
+l.118 ...cm}|>{\raggedleft\arraybackslash}p{3cm}|}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex:118: Undefined control sequence.
+<argument> ...{5cm}|>{\raggedleft \arraybackslash 
+                                                  }p{3cm}|
+l.118 ...cm}|>{\raggedleft\arraybackslash}p{3cm}|}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex:118: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 ...cm}|>{\raggedleft\arraybackslash}p{3cm}|}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex:118: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 ...cm}|>{\raggedleft\arraybackslash}p{3cm}|}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex:118: LaTeX Error:  Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 ...cm}|>{\raggedleft\arraybackslash}p{3cm}|}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<adme_correlations.png, id=199, 2192.19pt x 825.0825pt>
+File: adme_correlations.png Graphic file (type png)
+<use adme_correlations.png>
+Package pdftex.def Info: adme_correlations.png  used on input line 133.
+(pdftex.def)             Requested size: 418.25372pt x 157.40938pt.
+[22 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/adme_value_distribution.png>]
+
+Package natbib Warning: Citation `He.2021' on page 23 undefined on input line 141.
+
+
+Package natbib Warning: Citation `HernandezHernandez.2023' on page 23 undefined on input line 145.
+
+
+Package natbib Warning: Citation `Guo.2024' on page 23 undefined on input line 146.
+
+
+Package natbib Warning: Citation `Guo.2024' on page 23 undefined on input line 147.
+
+
+Package natbib Warning: Citation `TranNguyen.2020' on page 23 undefined on input line 155.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex:156: Package inputenc Error: Unicode character β (U+03B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 ...10488 total) and the Estrogen receptor β
+                                                   antagonist (477 actives, ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package natbib Warning: Citation `CortesCiriano.2019' on page 23 undefined on input line 164.
+
+
+Package natbib Warning: Citation `Deng.2023' on page 23 undefined on input line 165.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex:165: Package inputenc Error: Unicode character μ (U+03BC)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 ...elevant PD-related targets include the μ
+                                                  -opioid receptor (MOR), δ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex:165: Package inputenc Error: Unicode character δ (U+03B4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 ... include the μ-opioid receptor (MOR), δ
+                                                  -opioid receptor (DOR), an...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/tasks.tex:165: Package inputenc Error: Unicode character κ (U+03BA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 ...r (MOR), δ-opioid receptor (DOR), and κ
+                                                  -opioid receptor (KOR).
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package natbib Warning: Citation `Deng.2023' on page 23 undefined on input line 166.
+
+[23 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/adme_correlations.png>]
+
+Package natbib Warning: Citation `Zhang.2024' on page 24 undefined on input line 170.
+
+) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/methods.tex [24]
+chapter 4.
+
+Package natbib Warning: Citation `Paszke.03.12.2019' on page 25 undefined on input line 10.
+
+
+Package natbib Warning: Citation `Wang.28.11.2023' on page 25 undefined on input line 18.
+
+
+Package natbib Warning: Citation `Duvenaud.30.09.2015' on page 25 undefined on input line 40.
+
+[25
+
+
+]
+
+Package natbib Warning: Citation `Robinson.2020' on page 26 undefined on input line 68.
+
+
+Package natbib Warning: Citation `Jiang.2021' on page 26 undefined on input line 81.
+
+) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/implementation.tex [26]
+chapter 5.
+[27
+
+
+]
+
+Package natbib Warning: Citation `Bemis.1996' on page 28 undefined on input line 52.
+
+
+Package natbib Warning: Citation `Deng.2023' on page 28 undefined on input line 56.
+
+[28]
+
+Package natbib Warning: Citation `Butina.1999' on page 29 undefined on input line 77.
+
+
+Package natbib Warning: Citation `Guo.2024' on page 29 undefined on input line 81.
+
+
+Package natbib Warning: Citation `Guo.2024' on page 29 undefined on input line 81.
+
+
+Package natbib Warning: Citation `HernandezHernandez.2023' on page 29 undefined on input line 81.
+
+[29] [30]
+<rdkit_featurefp_features.png, id=268, 359.817pt x 380.841pt>
+File: rdkit_featurefp_features.png Graphic file (type png)
+<use rdkit_featurefp_features.png>
+Package pdftex.def Info: rdkit_featurefp_features.png  used on input line 137.
+(pdftex.def)             Requested size: 334.60425pt x 354.15521pt.
+<gobbi_features.png, id=269, 596.994pt x 282.291pt>
+File: gobbi_features.png Graphic file (type png)
+<use gobbi_features.png>
+Package pdftex.def Info: gobbi_features.png  used on input line 144.
+(pdftex.def)             Requested size: 439.16768pt x 207.66875pt.
+
+Overfull \hbox (20.91396pt too wide) in paragraph at lines 144--145
+ [][] 
+ []
+
+[31 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/rdkit_featurefp_features.png>]
+
+LaTeX Warning: Reference `tab:rdkit_featurefp_features' on page 32 undefined on input line 161.
+
+
+LaTeX Warning: Reference `fig:5_ethyl_2_methyl_pyridine' on page 32 undefined on input line 165.
+
+
+LaTeX Warning: Reference `fig:radius1_all_default_features' on page 32 undefined on input line 165.
+
+
+LaTeX Warning: Reference `fig:radius1_nobonds_onlyatomnr' on page 32 undefined on input line 165.
+
+
+LaTeX Warning: Reference `fig:radius1_onlytopological' on page 32 undefined on input line 165.
+
+<5_ethyl_2_methyl_pyridine.png, id=277, 451.6875pt x 150.5625pt>
+File: 5_ethyl_2_methyl_pyridine.png Graphic file (type png)
+<use 5_ethyl_2_methyl_pyridine.png>
+Package pdftex.def Info: 5_ethyl_2_methyl_pyridine.png  used on input line 169.
+(pdftex.def)             Requested size: 313.69029pt x 104.56825pt.
+<radius1_all_default_features.png, id=278, 602.25pt x 752.8125pt>
+File: radius1_all_default_features.png Graphic file (type png)
+<use radius1_all_default_features.png>
+Package pdftex.def Info: radius1_all_default_features.png  used on input line 177.
+(pdftex.def)             Requested size: 313.69029pt x 392.131pt.
+<radius1_nobonds_onlyatomnr.png, id=279, 602.25pt x 752.8125pt>
+File: radius1_nobonds_onlyatomnr.png Graphic file (type png)
+<use radius1_nobonds_onlyatomnr.png>
+Package pdftex.def Info: radius1_nobonds_onlyatomnr.png  used on input line 184.
+(pdftex.def)             Requested size: 313.69029pt x 392.131pt.
+<radius1_onlytopological.png, id=280, 602.25pt x 752.8125pt>
+File: radius1_onlytopological.png Graphic file (type png)
+<use radius1_onlytopological.png>
+Package pdftex.def Info: radius1_onlytopological.png  used on input line 191.
+(pdftex.def)             Requested size: 313.69029pt x 392.131pt.
+[32 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/gobbi_features.png> <c:/Users/josef/Downloads/Master_Molekulare_Biologie/5_ethyl_2_methyl_pyridine.png>] [33 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/radius1_all_default_features.png>] [34 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/radius1_nobonds_onlyatomnr.png>] [35 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/radius1_onlytopological.png>]
+
+Package natbib Warning: Citation `Akiba.25.07.2019' on page 36 undefined on input line 212.
+
+
+Package natbib Warning: Citation `Xu.01.10.2018' on page 36 undefined on input line 220.
+
+
+Package natbib Warning: Citation `Xu.01.10.2018' on page 36 undefined on input line 223.
+
+[36]
+
+Package natbib Warning: Citation `Duvenaud.30.09.2015' on page 37 undefined on input line 254.
+
+<scaled_sigmoid.png, id=316, 549.05125pt x 434.62375pt>
+File: scaled_sigmoid.png Graphic file (type png)
+<use scaled_sigmoid.png>
+Package pdftex.def Info: scaled_sigmoid.png  used on input line 278.
+(pdftex.def)             Requested size: 209.12686pt x 165.54338pt.
+
+Package natbib Warning: Citation `Yuan.2023' on page 37 undefined on input line 297.
+
+
+Package natbib Warning: Citation `Bengio.15.08.2013' on page 37 undefined on input line 299.
+
+[37]
+
+Package natbib Warning: Citation `Schweidtmann.2023' on page 38 undefined on input line 305.
+
+
+Package natbib Warning: Citation `Vinyals.19.11.2015' on page 38 undefined on input line 310.
+
+
+Package natbib Warning: Citation `Ying.22.06.2018' on page 38 undefined on input line 322.
+
+[38 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/scaled_sigmoid.png>]
+
+Package natbib Warning: Citation `Zhang.2024' on page 39 undefined on input line 338.
+
+
+Package natbib Warning: Citation `Zhang.2024' on page 39 undefined on input line 342.
+
+
+LaTeX Warning: Reference `tab:molecular_properties' on page 39 undefined on input line 360.
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 372.
+(d:/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (10.65013pt too wide) in paragraph at lines 369--396
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[39] [40]) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/results.tex
+Overfull \hbox (22.95454pt too wide) has occurred while \output is active
+[] |\T1/cmr/m/sl/10.95 5.1 Differences between Graph Neural Network-based representations and Morgan fingerprints[]
+ []
+
+[41] [42
+
+
+]
+chapter 6.
+[43] [44]
+
+Package natbib Warning: Citation `Deng.2023' on page 45 undefined on input line 67.
+
+
+Package natbib Warning: Citation `Stepisnik.2021' on page 45 undefined on input line 67.
+
+<binary_count_similarity_esol.png, id=366, 1246.6575pt x 1280.785pt>
+File: binary_count_similarity_esol.png Graphic file (type png)
+<use binary_count_similarity_esol.png>
+Package pdftex.def Info: binary_count_similarity_esol.png  used on input line 82.
+(pdftex.def)             Requested size: 104.56343pt x 107.40932pt.
+<weight_task_esol.png, id=367, 1231.60126pt x 402.50375pt>
+File: weight_task_esol.png Graphic file (type png)
+<use weight_task_esol.png>
+Package pdftex.def Info: weight_task_esol.png  used on input line 90.
+(pdftex.def)             Requested size: 209.12686pt x 68.34488pt.
+[45 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/binary_count_similarity_esol.png> <c:/Users/josef/Downloads/Master_Molekulare_Biologie/weight_task_esol.png>]
+<lipophilicity_res1.png, id=378, 1153.30875pt x 381.425pt>
+File: lipophilicity_res1.png Graphic file (type png)
+<use lipophilicity_res1.png>
+Package pdftex.def Info: lipophilicity_res1.png  used on input line 106.
+(pdftex.def)             Requested size: 480.98923pt x 159.07413pt.
+
+Overfull \hbox (62.7355pt too wide) in paragraph at lines 106--107
+ [][] 
+ []
+
+[46 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/lipophilicity_res1.png>]
+<zinc_1000_scaffold_all1.png, id=387, 2861.69125pt x 1832.8475pt>
+File: zinc_1000_scaffold_all1.png Graphic file (type png)
+<use zinc_1000_scaffold_all1.png>
+Package pdftex.def Info: zinc_1000_scaffold_all1.png  used on input line 118.
+(pdftex.def)             Requested size: 621.10858pt x 397.80211pt.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/results.tex:119: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119     \caption
+                  {Results for ZINC (1000 training instances) hyperparameter...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (29.57831pt too wide) in paragraph at lines 118--121
+ [][] 
+ []
+
+[47
+
+ <c:/Users/josef/Downloads/Master_Molekulare_Biologie/zinc_1000_scaffold_all1.png>] [48
+
+]
+
+LaTeX Warning: Reference `fig:weight_split_esol' on page 49 undefined on input line 181.
+
+
+LaTeX Warning: Reference `fig:weight_split_esol_var_mse' on page 49 undefined on input line 181.
+
+<weight_split_esol.png, id=402, 1898.09125pt x 1248.665pt>
+File: weight_split_esol.png Graphic file (type png)
+<use weight_split_esol.png>
+Package pdftex.def Info: weight_split_esol.png  used on input line 186.
+(pdftex.def)             Requested size: 418.25372pt x 275.14537pt.
+<weight_split_esol_var_mse.png, id=403, 1903.11pt x 1231.60126pt>
+File: weight_split_esol_var_mse.png Graphic file (type png)
+<use weight_split_esol_var_mse.png>
+Package pdftex.def Info: weight_split_esol_var_mse.png  used on input line 195.
+(pdftex.def)             Requested size: 418.25372pt x 270.67122pt.
+<task_split_esol.png, id=404, 1898.09125pt x 1231.60126pt>
+File: task_split_esol.png Graphic file (type png)
+<use task_split_esol.png>
+Package pdftex.def Info: task_split_esol.png  used on input line 207.
+(pdftex.def)             Requested size: 418.25372pt x 271.38535pt.
+<task_split_esol_5plots.png, id=405, 1898.09125pt x 1231.60126pt>
+File: task_split_esol_5plots.png Graphic file (type png)
+<use task_split_esol_5plots.png>
+Package pdftex.def Info: task_split_esol_5plots.png  used on input line 214.
+(pdftex.def)             Requested size: 418.25372pt x 271.38535pt.
+
+LaTeX Warning: Reference `fig:task_split_esol' on page 49 undefined on input line 219.
+
+[49 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/weight_split_esol.png>] [50 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/weight_split_esol_var_mse.png>] [51 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/task_split_esol.png>] [52 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/task_split_esol_5plots.png>]
+
+Package natbib Warning: Citation `Zhang.2024' on page 53 undefined on input line 235.
+
+<umap_scaffold_comparison_kor_activity1.png, id=430, 2990.17125pt x 1601.985pt>
+File: umap_scaffold_comparison_kor_activity1.png Graphic file (type png)
+<use umap_scaffold_comparison_kor_activity1.png>
+Package pdftex.def Info: umap_scaffold_comparison_kor_activity1.png  used on input line 241.
+(pdftex.def)             Requested size: 418.25372pt x 224.05637pt.
+[53 <c:/Users/josef/Downloads/Master_Molekulare_Biologie/umap_scaffold_comparison_kor_activity1.png>]
+
+Package natbib Warning: Citation `Li.12.09.2017' on page 54 undefined on input line 266.
+
+
+Package natbib Warning: Citation `Kearnes.2016' on page 54 undefined on input line 266.
+
+[54]
+
+Package natbib Warning: Citation `Schweidtmann.2023' on page 55 undefined on input line 321.
+
+[55]) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/discussion.tex [56]
+chapter 7.
+
+Package natbib Warning: Citation `Deng.2023' on page 57 undefined on input line 30.
+
+
+Package natbib Warning: Citation `Deng.2023' on page 57 undefined on input line 31.
+
+[57
+
+
+]
+
+Package natbib Warning: Citation `vanTilborg.2022' on page 58 undefined on input line 36.
+
+
+Package natbib Warning: Citation `Zhang.2024' on page 58 undefined on input line 43.
+
+
+Package natbib Warning: Citation `Comparison of fingerprint and GNN performance' on page 58 undefined on input line 47.
+
+[58]) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/B) Chapters/conclusion.tex [59] [60
+
+
+]
+chapter 8.
+[61]) (c:/Users/josef/Downloads/Master_Molekulare_Biologie/main.bbl [62]
+chapter without number
+[63
+
+
+] [64])
+No file main.acr.
+No file main.gls.
+[65] [66
+
+
+]
+
+FiXme Summary: Number of notes: 0,
+(FiXme)        Number of warnings: 0,
+(FiXme)        Number of errors: 0,
+(FiXme)        Number of fatal errors: 0,
+(FiXme)        Total: 0.
+
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
+(c:/Users/josef/Downloads/Master_Molekulare_Biologie/main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+
+c:/Users/josef/Downloads/Master_Molekulare_Biologie/main.aux:421: Package natbib Error: Bibliography not compatible with author-year citations.
+(natbib)                Press <return> to continue in numerical citation style.
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.421 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
+ ) 
+Here is how much of TeX's memory you used:
+ 27094 strings out of 480471
+ 426358 string characters out of 5903301
+ 899137 words of memory out of 5000000
+ 42259 multiletter control sequences out of 15000+600000
+ 572860 words of font info for 120 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 63i,11n,76p,10152b,2353s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{d:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{d:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><d:/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on c:/Users/josef/Downloads/Master_Molekulare_Biologie/main.pdf (74 pages, 2340395 bytes).
+PDF statistics:
+ 905 PDF objects out of 1000 (max. 8388607)
+ 233 named destinations out of 1000 (max. 500000)
+ 21152 words of extra memory for PDF output out of 24883 (max. 10000000)
+

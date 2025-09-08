@@ -1,0 +1,168 @@
+﻿% This file was created with Citavi 6.7.0.0
+
+@article{.,
+ title = {NeurIPS-2022-a-comprehensive-study-on-large-scale-graph-training-benchmarking-and-rethinking-Paper-Datasets{\_}and{\_}Benchmarks},
+ file = {NeurIPS-2022-a-comprehensive-study-on-large-scale-graph-training-benchmarking-and-rethinking-Paper-Datasets_and_Benchmarks:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\NeurIPS-2022-a-comprehensive-study-on-large-scale-graph-training-benchmarking-and-rethinking-Paper-Datasets_and_Benchmarks.pdf:pdf}
+}
+
+
+@article{.b,
+ title = {22-0240},
+ file = {22-0240:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\22-0240.pdf:pdf}
+}
+
+
+@misc{Alsentzer.18.06.2020,
+ abstract = {Deep learning methods for graphs achieve remarkable performance on many node-level and graph-level prediction tasks. However, despite the proliferation of the methods and their success, prevailing Graph Neural Networks (GNNs) neglect subgraphs, rendering subgraph prediction tasks challenging to tackle in many impactful applications. Further, subgraph prediction tasks present several unique challenges: subgraphs can have non-trivial internal topology, but also carry a notion of position and external connectivity information relative to the underlying graph in which they exist. Here, we introduce SubGNN, a subgraph neural network to learn disentangled subgraph representations. We propose a novel subgraph routing mechanism that propagates neural messages between the subgraph's components and randomly sampled anchor patches from the underlying graph, yielding highly accurate subgraph representations. SubGNN specifies three channels, each designed to capture a distinct aspect of subgraph topology, and we provide empirical evidence that the channels encode their intended properties. We design a series of new synthetic and real-world subgraph datasets. Empirical results for subgraph classification on eight datasets show that SubGNN achieves considerable performance gains, outperforming strong baseline methods, including node-level and graph-level GNNs, by 19.8{\%} over the strongest baseline. SubGNN performs exceptionally well on challenging biomedical datasets where subgraphs have complex topology and even comprise multiple disconnected components.},
+ author = {Alsentzer, Emily and Finlayson, Samuel G. and Li, Michelle M. and Zitnik, Marinka},
+ date = {18.06.2020},
+ title = {Subgraph Neural Networks},
+ url = {http://arxiv.org/pdf/2006.10538v3},
+ keywords = {Computer Science - Learning;Statistics - Machine Learning},
+ file = {https://arxiv.org/pdf/2006.10538v3.pdf},
+ file = {2006.10538v3:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\2006.10538v3.pdf:pdf}
+}
+
+
+@misc{Amir.10.06.2023,
+ abstract = {Injective multiset functions have a key role in the theoretical study of machine learning on multisets and graphs. Yet, there remains a gap between the provably injective multiset functions considered in theory, which typically rely on polynomial moments, and the multiset functions used in practice, which rely on {\$}\textit{neural moments}{\$} {\$}\unicode{x2014}{\$} whose injectivity on multisets has not been studied to date.  In this paper, we bridge this gap by showing that moments of neural networks do define injective multiset functions, provided that an analytic non-polynomial activation is used. The number of moments required by our theory is optimal essentially up to a multiplicative factor of two. To prove this result, we state and prove a {\$}\textit{finite witness theorem}{\$}, which is of independent interest.  As a corollary to our main theorem, we derive new approximation results for functions on multisets and measures, and new separation results for graph neural networks. We also provide two negative results: (1) moments of piecewise-linear neural networks cannot be injective multiset functions; and (2) even when moment-based multiset functions are injective, they can never be bi-Lipschitz.},
+ author = {Amir, Tal and Gortler, Steven J. and Avni, Ilai and Ravina, Ravina and Dym, Nadav},
+ date = {10.06.2023},
+ title = {Neural Injective Functions for Multisets, Measures and Graphs via a  Finite Witness Theorem},
+ url = {http://arxiv.org/pdf/2306.06529v2},
+ keywords = {Computer Science - Learning},
+ file = {http://arxiv.org/abs/2306.06529v2},
+ file = {https://arxiv.org/pdf/2306.06529v2.pdf},
+ file = {2306.06529v2:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\2306.06529v2.pdf:pdf}
+}
+
+
+@misc{Bevilacqua.31.10.2023,
+ abstract = {Subgraph GNNs are provably expressive neural architectures that learn graph representations from sets of subgraphs. Unfortunately, their applicability is hampered by the computational complexity associated with performing message passing on many subgraphs. In this paper, we consider the problem of learning to select a small subset of the large set of possible subgraphs in a data-driven fashion. We first motivate the problem by proving that there are families of WL-indistinguishable graphs for which there exist efficient subgraph selection policies: small subsets of subgraphs that can already identify all the graphs within the family. We then propose a new approach, called Policy-Learn, that learns how to select subgraphs in an iterative manner. We prove that, unlike popular random policies and prior work addressing the same problem, our architecture is able to learn the efficient policies mentioned above. Our experimental results demonstrate that Policy-Learn outperforms existing baselines across a wide range of datasets.},
+ author = {Bevilacqua, Beatrice and Eliasof, Moshe and Meirom, Eli and Ribeiro, Bruno and Maron, Haggai},
+ date = {31.10.2023},
+ title = {Efficient Subgraph GNNs by Learning Effective Selection Policies},
+ url = {http://arxiv.org/pdf/2310.20082v2},
+ keywords = {Computer Science - Learning},
+ file = {http://arxiv.org/abs/2310.20082v2},
+ file = {https://arxiv.org/pdf/2310.20082v2.pdf},
+ file = {2310.20082v2:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\2310.20082v2.pdf:pdf}
+}
+
+
+@misc{Hu.29.05.2019,
+ abstract = {Many applications of machine learning require a model to make accurate pre-dictions on test examples that are distributionally different from training ones, while task-specific labels are scarce during training. An effective approach to this challenge is to pre-train a model on related tasks where data is abundant, and then fine-tune it on a downstream task of interest. While pre-training has been effective in many language and vision domains, it remains an open question how to effectively use pre-training on graph datasets. In this paper, we develop a new strategy and self-supervised methods for pre-training Graph Neural Networks (GNNs). The key to the success of our strategy is to pre-train an expressive GNN at the level of individual nodes as well as entire graphs so that the GNN can learn useful local and global representations simultaneously. We systematically study pre-training on multiple graph classification datasets. We find that naive strategies, which pre-train GNNs at the level of either entire graphs or individual nodes, give limited improvement and can even lead to negative transfer on many downstream tasks. In contrast, our strategy avoids negative transfer and improves generalization significantly across downstream tasks, leading up to 9.4{\%} absolute improvements in ROC-AUC over non-pre-trained models and achieving state-of-the-art performance for molecular property prediction and protein function prediction.},
+ author = {Hu, Weihua and Liu, Bowen and Gomes, Joseph and Zitnik, Marinka and Liang, Percy and Pande, Vijay and Leskovec, Jure},
+ date = {29.05.2019},
+ title = {Strategies for Pre-training Graph Neural Networks},
+ url = {http://arxiv.org/pdf/1905.12265v3},
+ keywords = {Computer Science - Learning;Statistics - Machine Learning},
+ file = {1905.12265v3:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\1905.12265v3.pdf:pdf}
+}
+
+
+@article{Liu.2023,
+ abstract = {Graph convolutional neural networks (GCNs) have been repeatedly shown to have robust capacities for modeling graph data such as small molecules. Message-passing neural networks (MPNNs), a group of GCN variants that can learn and aggregate local information of molecules through iterative message-passing iterations, have exhibited advancements in molecular modeling and property prediction. Moreover, given the merits of Transformers in multiple artificial intelligence domains, it is desirable to combine the self-attention mechanism with MPNNs for better molecular representation. We propose an atom-bond transformer-based message-passing neural network (ABT-MPNN), to improve the molecular representation embedding process for molecular property predictions. By designing corresponding attention mechanisms in the message-passing and readout phases of the MPNN, our method provides a novel architecture that integrates molecular representations at the bond, atom and molecule levels in an end-to-end way. The experimental results across nine datasets show that the proposed ABT-MPNN outperforms or is comparable to the state-of-the-art baseline models in quantitative structure-property relationship tasks. We provide case examples of Mycobacterium tuberculosis growth inhibitors and demonstrate that our model's visualization modality of attention at the atomic level could be an insightful way to investigate molecular atoms or functional groups associated with desired biological properties. The new model provides an innovative way to investigate the effect of self-attention on chemical substructures and functional groups in molecular representation learning, which increases the interpretability of the traditional MPNN and can serve as a valuable way to investigate the mechanism of action of drugs.},
+ author = {Liu, Chengyou and Sun, Yan and Davis, Rebecca and Cardona, Silvia T. and Hu, Pingzhao},
+ year = {2023},
+ title = {ABT-MPNN: an atom-bond transformer-based message-passing neural network for molecular property prediction},
+ keywords = {Atom-bond Transformer message-passing neural network;Attention mechanism;Biological activity prediction;Message-passing neural networks;Molecular property prediction;Molecular representations},
+ pages = {29},
+ volume = {15},
+ number = {1},
+ issn = {1758-2946},
+ journal = {Journal of cheminformatics},
+ doi = {10.1186/s13321-023-00698-9},
+ file = {http://www.ncbi.nlm.nih.gov/pubmed/36843022},
+ file = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9968697},
+ file = {s13321-023-00698-9:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\s13321-023-00698-9.pdf:pdf}
+}
+
+
+@misc{Morris.18.12.2021,
+ abstract = {In recent years, algorithms and neural architectures based on the Weisfeiler--Leman algorithm, a well-known heuristic for the graph isomorphism problem, have emerged as a powerful tool for machine learning with graphs and relational data. Here, we give a comprehensive overview of the algorithm's use in a machine-learning setting, focusing on the supervised regime. We discuss the theoretical background, show how to use it for supervised graph and node representation learning, discuss recent extensions, and outline the algorithm's connection to (permutation-)equivariant neural architectures. Moreover, we give an overview of current applications and future directions to stimulate further research.},
+ author = {Morris, Christopher and Lipman, Yaron and Maron, Haggai and Rieck, Bastian and Kriege, Nils M. and Grohe, Martin and Fey, Matthias and Borgwardt, Karsten},
+ date = {18.12.2021},
+ title = {Weisfeiler and Leman go Machine Learning: The Story so far},
+ url = {http://arxiv.org/pdf/2112.09992v4},
+ file = {http://arxiv.org/abs/2112.09992v4},
+ file = {https://arxiv.org/pdf/2112.09992v4.pdf}
+}
+
+
+@misc{Rampasek.25.05.2022,
+ abstract = {We propose a recipe on how to build a general, powerful, scalable (GPS) graph Transformer with linear complexity and state-of-the-art results on a diverse set of benchmarks. Graph Transformers (GTs) have gained popularity in the field of graph representation learning with a variety of recent publications but they lack a common foundation about what constitutes a good positional or structural encoding, and what differentiates them. In this paper, we summarize the different types of encodings with a clearer definition and categorize them as being {\$}\textit{local}{\$}, {\$}\textit{global}{\$} or {\$}\textit{relative}{\$}. The prior GTs are constrained to small graphs with a few hundred nodes, here we propose the first architecture with a complexity linear in the number of nodes and edges {\$}O(N+E){\$} by decoupling the local real-edge aggregation from the fully-connected Transformer. We argue that this decoupling does not negatively affect the expressivity, with our architecture being a universal function approximator on graphs. Our GPS recipe consists of choosing 3 main ingredients: (i) positional/structural encoding, (ii) local message-passing mechanism, and (iii) global attention mechanism. We provide a modular framework {\$}\textit{GraphGPS}{\$} that supports multiple types of encodings and that provides efficiency and scalability both in small and large graphs. We test our architecture on 16 benchmarks and show highly competitive results in all of them, show-casing the empirical benefits gained by the modularity and the combination of different strategies.},
+ author = {Ramp{\'a}{\v{s}}ek, Ladislav and Galkin, Mikhail and Dwivedi, Vijay Prakash and Luu, Anh Tuan and Wolf, Guy and Beaini, Dominique},
+ date = {25.05.2022},
+ title = {Recipe for a General, Powerful, Scalable Graph Transformer},
+ url = {http://arxiv.org/pdf/2205.12454v4},
+ keywords = {Computer Science - Learning},
+ file = {https://arxiv.org/pdf/2205.12454v4.pdf},
+ file = {2205.12454v4:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\2205.12454v4.pdf:pdf}
+}
+
+
+@misc{Rusch.20.03.2023,
+ abstract = {Node features of graph neural networks (GNNs) tend to become more similar with the increase of the network depth. This effect is known as over-smoothing, which we axiomatically define as the exponential convergence of suitable similarity measures on the node features. Our definition unifies previous approaches and gives rise to new quantitative measures of over-smoothing. Moreover, we empirically demonstrate this behavior for several over-smoothing measures on different graphs (small-, medium-, and large-scale). We also review several approaches for mitigating over-smoothing and empirically test their effectiveness on real-world graph datasets. Through illustrative examples, we demonstrate that mitigating over-smoothing is a necessary but not sufficient condition for building deep GNNs that are expressive on a wide range of graph learning tasks. Finally, we extend our definition of over-smoothing to the rapidly emerging field of continuous-time GNNs.},
+ author = {Rusch, T. Konstantin and Bronstein, Michael M. and Mishra, Siddhartha},
+ date = {20.03.2023},
+ title = {A Survey on Oversmoothing in Graph Neural Networks},
+ url = {http://arxiv.org/pdf/2303.10993v1},
+ keywords = {Computer Science - Learning},
+ file = {https://arxiv.org/pdf/2303.10993v1.pdf},
+ file = {2303.10993v1:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\2303.10993v1.pdf:pdf}
+}
+
+
+@misc{Topping.29.11.2021,
+ abstract = {Most graph neural networks (GNNs) use the message passing paradigm, in which node features are propagated on the input graph. Recent works pointed to the distortion of information flowing from distant nodes as a factor limiting the efficiency of message passing for tasks relying on long-distance interactions. This phenomenon, referred to as 'over-squashing', has been heuristically attributed to graph bottlenecks where the number of $k$-hop neighbors grows rapidly with $k$. We provide a precise description of the over-squashing phenomenon in GNNs and analyze how it arises from bottlenecks in the graph. For this purpose, we introduce a new edge-based combinatorial curvature and prove that negatively curved edges are responsible for the over-squashing issue. We also propose and experimentally test a curvature-based graph rewiring method to alleviate the over-squashing.},
+ author = {Topping, Jake and {Di Giovanni}, Francesco and Chamberlain, Benjamin Paul and Dong, Xiaowen and Bronstein, Michael M.},
+ date = {29.11.2021},
+ title = {Understanding over-squashing and bottlenecks on graphs via curvature},
+ url = {http://arxiv.org/pdf/2111.14522v3},
+ keywords = {Computer Science - Learning;Statistics - Machine Learning},
+ file = {http://arxiv.org/abs/2111.14522v3},
+ file = {https://arxiv.org/pdf/2111.14522v3.pdf},
+ file = {2111.14522v3:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\2111.14522v3.pdf:pdf}
+}
+
+
+@misc{Velickovic.30.10.2017,
+ abstract = {We present graph attention networks (GATs), novel neural network architectures that operate on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based on graph convolutions or their approximations. By stacking layers in which nodes are able to attend over their neighborhoods' features, we enable (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront. In this way, we address several key challenges of spectral-based graph neural networks simultaneously, and make our model readily applicable to inductive as well as transductive problems. Our GAT models have achieved or matched state-of-the-art results across four established transductive and inductive graph benchmarks: the Cora, Citeseer and Pubmed citation network datasets, as well as a protein-protein interaction dataset (wherein test graphs remain unseen during training).},
+ author = {Veli{\v{c}}kovi{\'c}, Petar and Cucurull, Guillem and Casanova, Arantxa and Romero, Adriana and Li{\`o}, Pietro and Bengio, Yoshua},
+ date = {30.10.2017},
+ title = {Graph Attention Networks},
+ url = {http://arxiv.org/pdf/1710.10903v3},
+ keywords = {Computer Science - Artificial Intelligence;Computer Science - Learning;Statistics - Machine Learning},
+ file = {http://arxiv.org/abs/1710.10903v3},
+ file = {https://arxiv.org/pdf/1710.10903v3.pdf},
+ file = {1710.10903v3:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\1710.10903v3.pdf:pdf}
+}
+
+
+@misc{Xu.01.10.2018,
+ abstract = {Graph Neural Networks (GNNs) are an effective framework for representation learning of graphs. GNNs follow a neighborhood aggregation scheme, where the representation vector of a node is computed by recursively aggregating and transforming representation vectors of its neighboring nodes. Many GNN variants have been proposed and have achieved state-of-the-art results on both node and graph classification tasks. However, despite GNNs revolutionizing graph representation learning, there is limited understanding of their representational properties and limitations. Here, we present a theoretical framework for analyzing the expressive power of GNNs to capture different graph structures. Our results characterize the discriminative power of popular GNN variants, such as Graph Convolutional Networks and GraphSAGE, and show that they cannot learn to distinguish certain simple graph structures. We then develop a simple architecture that is provably the most expressive among the class of GNNs and is as powerful as the Weisfeiler-Lehman graph isomorphism test. We empirically validate our theoretical findings on a number of graph classification benchmarks, and demonstrate that our model achieves state-of-the-art performance.},
+ author = {Xu, Keyulu and Hu, Weihua and Leskovec, Jure and Jegelka, Stefanie},
+ date = {01.10.2018},
+ title = {How Powerful are Graph Neural Networks?},
+ url = {http://arxiv.org/pdf/1810.00826v3},
+ keywords = {Computer Science - Computer Vision and Pattern Recognition;Computer Science - Learning;Statistics - Machine Learning},
+ file = {https://arxiv.org/pdf/1810.00826v3.pdf},
+ file = {http://arxiv.org/abs/1810.00826v3},
+ file = {1810.00826v3:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\1810.00826v3.pdf:pdf}
+}
+
+
+@misc{Zaheer.10.03.2017,
+ abstract = {We study the problem of designing models for machine learning tasks defined on \emph{sets}. In contrast to traditional approach of operating on fixed dimensional vectors, we consider objective functions defined on sets that are invariant to permutations. Such problems are widespread, ranging from estimation of population statistics \cite{poczos13aistats}, to anomaly detection in piezometer data of embankment dams \cite{Jung15Exploration}, to cosmology \cite{Ntampaka16Dynamical,Ravanbakhsh16ICML1}. Our main theorem characterizes the permutation invariant functions and provides a family of functions to which any permutation invariant objective function must belong. This family of functions has a special structure which enables us to design a deep network architecture that can operate on sets and which can be deployed on a variety of scenarios including both unsupervised and supervised learning tasks. We also derive the necessary and sufficient conditions for permutation equivariance in deep models. We demonstrate the applicability of our method on population statistic estimation, point cloud classification, set expansion, and outlier detection.},
+ author = {Zaheer, Manzil and Kottur, Satwik and Ravanbakhsh, Siamak and Poczos, Barnabas and Salakhutdinov, Ruslan and Smola, Alexander},
+ date = {10.03.2017},
+ title = {Deep Sets},
+ url = {http://arxiv.org/pdf/1703.06114v3},
+ keywords = {Computer Science - Learning;Statistics - Machine Learning},
+ file = {https://arxiv.org/pdf/1703.06114v3.pdf},
+ file = {http://arxiv.org/abs/1703.06114v3},
+ file = {1703.06114v3:K\:\\citavi_projects\\Graph Neural Networks\\Citavi Attachments\\1703.06114v3.pdf:pdf}
+}
+
+

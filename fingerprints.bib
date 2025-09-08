@@ -1,0 +1,184 @@
+﻿% This file was created with Citavi 6.7.0.0
+
+@article{.,
+ title = {1965{\_}Morgan{\_}107},
+ file = {1965_Morgan_107:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\1965_Morgan_107.pdf:pdf}
+}
+
+
+@article{Bajusz.2015,
+ abstract = {BACKGROUND
+
+Cheminformaticians are equipped with a very rich toolbox when carrying out molecular similarity calculations. A large number of molecular representations exist, and there are several methods (similarity and distance metrics) to quantify the similarity of molecular representations. In this work, eight well-known similarity/distance metrics are compared on a large dataset of molecular fingerprints with sum of ranking differences (SRD) and ANOVA analysis. The effects of molecular size, selection methods and data pretreatment methods on the outcome of the comparison are also assessed.
+
+RESULTS
+
+A supplier database (https://mcule.com/) was used as the source of compounds for the similarity calculations in this study. A large number of datasets, each consisting of one hundred compounds, were compiled, molecular fingerprints were generated and similarity values between a randomly chosen reference compound and the rest were calculated for each dataset. Similarity metrics were compared based on their ranking of the compounds within one experiment (one dataset) using sum of ranking differences (SRD), while the results of the entire set of experiments were summarized on box and whisker plots. Finally, the effects of various factors (data pretreatment, molecule size, selection method) were evaluated with analysis of variance (ANOVA).
+
+CONCLUSIONS
+
+This study complements previous efforts to examine and rank various metrics for molecular similarity calculations. Here, however, an entirely general approach was taken to neglect any a priori knowledge on the compounds involved, as well as any bias introduced by examining only one or a few specific scenarios. The Tanimoto index, Dice index, Cosine coefficient and Soergel distance were identified to be the best (and in some sense equivalent) metrics for similarity calculations, i.e. these metrics could produce the rankings closest to the composite (average) ranking of the eight metrics. The similarity metrics derived from Euclidean and Manhattan distances are not recommended on their own, although their variability and diversity from other similarity metrics might be advantageous in certain cases (e.g. for data fusion). Conclusions are also drawn regarding the effects of molecule size, selection method and data pretreatment on the ranking behavior of the studied metrics. Graphical AbstractA visual summary of the comparison of similarity metrics with sum of ranking differences (SRD).},
+ author = {Bajusz, D{\'a}vid and R{\'a}cz, Anita and H{\'e}berger, K{\'a}roly},
+ year = {2015},
+ title = {Why is Tanimoto index an appropriate choice for fingerprint-based similarity calculations?},
+ keywords = {Analysis of variance;Data fusion;Distance metrics;Fingerprint;Ranking;Similarity;Sum of ranking differences},
+ pages = {20},
+ volume = {7},
+ issn = {1758-2946},
+ journal = {Journal of cheminformatics},
+ doi = {10.1186/s13321-015-0069-3},
+ file = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4456712},
+ file = {http://www.ncbi.nlm.nih.gov/pubmed/26052348},
+ file = {s13321-015-0069-3:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\s13321-015-0069-3.pdf:pdf}
+}
+
+
+@article{Capecchi.2020,
+ abstract = {BACKGROUND
+
+Molecular fingerprints are essential cheminformatics tools for virtual screening and mapping chemical space. Among the different types of fingerprints, substructure fingerprints perform best for small molecules such as drugs, while atom-pair fingerprints are preferable for large molecules such as peptides. However, no available fingerprint achieves good performance on both classes of molecules.
+
+RESULTS
+
+Here we set out to design a new fingerprint suitable for both small and large molecules by combining substructure and atom-pair concepts. Our quest resulted in a new fingerprint called MinHashed atom-pair fingerprint up to a diameter of four bonds (MAP4). In this fingerprint the circular substructures with radii of r = 1 and r = 2 bonds around each atom in an atom-pair are written as two pairs of SMILES, each pair being combined with the topological distance separating the two central atoms. These so-called atom-pair molecular shingles are hashed, and the resulting set of hashes is MinHashed to form the MAP4 fingerprint. MAP4 significantly outperforms all other fingerprints on an extended benchmark that combines the Riniker and Landrum small molecule benchmark with a peptide benchmark recovering BLAST analogs from either scrambled or point mutation analogs. MAP4 furthermore produces well-organized chemical space tree-maps (TMAPs) for databases as diverse as DrugBank, ChEMBL, SwissProt and the Human Metabolome Database (HMBD), and differentiates between all metabolites in HMBD, over 70{\%} of which are indistinguishable from their nearest neighbor using substructure fingerprints.
+
+CONCLUSION
+
+MAP4 is a new molecular fingerprint suitable for drugs, biomolecules, and the metabolome and can be adopted as a universal fingerprint to describe and search chemical space. The source code is available at https://github.com/reymond-group/map4 and interactive MAP4 similarity search tools and TMAPs for various databases are accessible at http://map-search.gdb.tools/ and http://tm.gdb.tools/map4/.},
+ author = {Capecchi, Alice and Probst, Daniel and Reymond, Jean-Louis},
+ year = {2020},
+ title = {One molecular fingerprint to rule them all: drugs, biomolecules, and the metabolome},
+ keywords = {Chemical space;Databases;Locality sensitive hashing;Molecular fingerprints;Virtual screening},
+ pages = {43},
+ volume = {12},
+ number = {1},
+ issn = {1758-2946},
+ journal = {Journal of cheminformatics},
+ doi = {10.1186/s13321-020-00445-4},
+ file = {s13321-020-00445-4:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\s13321-020-00445-4.pdf:pdf}
+}
+
+
+@article{Guo.2023,
+ abstract = {Despite the success of AlphaFold2 (AF2), it is unclear how AF2 models accommodate for ligand binding. Here, we start with a protein sequence from Acidimicrobiaceae TMED77 (T7RdhA) with potential for catalyzing the degradation of per- and polyfluoroalkyl substances (PFASs). AF2 models and experiments identified T7RdhA as a corrinoid iron-sulfur protein (CoFeSP) which uses a norpseudo-cobalamin (BVQ) cofactor and two Fe4S4 iron-sulfur clusters for catalysis. Docking and molecular dynamics simulations suggest that T7RdhA uses perfluorooctanoic acetate (PFOA) as a substrate, supporting the reported defluorination activity of its homolog, A6RdhA. We showed that AF2 provides processual (dynamic) predictions for the binding pockets of ligands (cofactors and/or substrates). Because the pLDDT scores provided by AF2 reflect the protein native states in complex with ligands as the evolutionary constraints, the Evoformer network of AF2 predicts protein structures and residue flexibility in complex with the ligands, i.e., in their native states. Therefore, an apo-protein predicted by AF2 is actually a holo-protein awaiting ligands.},
+ author = {Guo, Hao-Bo and Varaljay, Vanessa A. and Kedziora, Gary and Taylor, Kimberly and Farajollahi, Sanaz and Lombardo, Nina and Harper, Eric and Hung, Chia and Gross, Marie and Perminov, Alexander and Dennis, Patrick and Kelley-Loughnane, Nancy and Berry, Rajiv},
+ year = {2023},
+ title = {Accurate prediction by AlphaFold2 for ligand binding in a reductive dehalogenase and implications for PFAS (per- and polyfluoroalkyl substance) biodegradation},
+ keywords = {Fluorocarbons;Furylfuramide;Iron-Sulfur Proteins/metabolism;Ligands;Vitamin B 12/metabolism},
+ pages = {4082},
+ volume = {13},
+ number = {1},
+ journal = {Scientific reports},
+ doi = {10.1038/s41598-023-30310-x},
+ file = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10008544},
+ file = {s41598-023-30310-x:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\s41598-023-30310-x.pdf:pdf}
+}
+
+
+@article{GuolinKe.,
+ abstract = {Neural Information Processing Systems http://nips.cc/},
+ author = {{Guolin Ke} and {Qi Meng} and {Thomas Finley} and {Taifeng Wang} and {Wei Chen} and {Weidong Ma} and {Qiwei Ye} and {Tie-Yan Liu}},
+ title = {LightGBM: A Highly Efficient Gradient Boosting Decision Tree},
+ file = {NIPS-2017-lightgbm-a-highly-efficient-gradient-boosting-decision-tree-Paper:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\NIPS-2017-lightgbm-a-highly-efficient-gradient-boosting-decision-tree-Paper.pdf:pdf}
+}
+
+
+@article{Hekkelman.2023,
+ abstract = {Artificial intelligence-based protein structure prediction approaches have had a transformative effect on biomolecular sciences. The predicted protein models in the AlphaFold protein structure database, however, all lack coordinates for small molecules, essential for molecular structure or function: hemoglobin lacks bound heme; zinc-finger motifs lack zinc ions essential for structural integrity and metalloproteases lack metal ions needed for catalysis. Ligands important for biological function are absent too; no ADP or ATP is bound to any of the ATPases or kinases. Here we present AlphaFill, an algorithm that uses sequence and structure similarity to 'transplant' such 'missing' small molecules and ions from experimentally determined structures to predicted protein models. The algorithm was successfully validated against experimental structures. A total of 12,029,789 transplants were performed on 995,411 AlphaFold models and are available together with associated validation metrics in the alphafill.eu databank, a resource to help scientists make new hypotheses and design targeted experiments.},
+ author = {Hekkelman, Maarten L. and de Vries, Ida and Joosten, Robbie P. and Perrakis, Anastassis},
+ year = {2023},
+ title = {AlphaFill: enriching AlphaFold models with ligands and cofactors},
+ keywords = {artificial intelligence;Ions;Ligands;Protein Conformation;Proteins/chemistry;Zinc},
+ pages = {205--213},
+ volume = {20},
+ number = {2},
+ journal = {Nature methods},
+ doi = {10.1038/s41592-022-01685-y},
+ file = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9911346},
+ file = {s41592-022-01685-y-1:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\s41592-022-01685-y-1.pdf:pdf}
+}
+
+
+@misc{Kriege.22.05.2022,
+ abstract = {Random walk kernels have been introduced in seminal work on graph learning and were later largely superseded by kernels based on the Weisfeiler-Leman test for graph isomorphism. We give a unified view on both classes of graph kernels. We study walk-based node refinement methods and formally relate them to several widely-used techniques, including Morgan's algorithm for molecule canonization and the Weisfeiler-Leman test. We define corresponding walk-based kernels on nodes that allow fine-grained parameterized neighborhood comparison, reach Weisfeiler-Leman expressiveness, and are computed using the kernel trick. From this we show that classical random walk kernels with only minor modifications regarding definition and computation are as expressive as the widely-used Weisfeiler-Leman subtree kernel but support non-strict neighborhood comparison. We verify experimentally that walk-based kernels reach or even surpass the accuracy of Weisfeiler-Leman kernels in real-world classification tasks.},
+ author = {Kriege, Nils M.},
+ date = {22.05.2022},
+ title = {Weisfeiler and Leman Go Walking: Random Walk Kernels Revisited},
+ url = {http://arxiv.org/pdf/2205.10914v3},
+ keywords = {Computer Science - Data Structures and Algorithms;Computer Science - Learning;Statistics - Machine Learning},
+ file = {2205.10914v3:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\2205.10914v3.pdf:pdf}
+}
+
+
+@misc{Liu.04.01.2023,
+ abstract = {Molecular fingerprints are significant cheminformatics tools to map molecules into vectorial space according to their characteristics in diverse functional groups, atom sequences, and other topological structures. In this paper, we set out to investigate a novel molecular fingerprint \emph{Anonymous-FP} that possesses abundant perception about the underlying interactions shaped in small, medium, and large molecular scale links. In detail, the possible inherent atom chains are sampled from each molecule and are extended in a certain anonymous pattern. After that, the molecular fingerprint \emph{Anonymous-FP} is encoded in virtue of the Natural Language Processing technique \emph{PV-DBOW}. \emph{Anonymous-FP} is studied on molecular property identification and has shown valuable advantages such as rich information content, high experimental performance, and full structural significance. During the experimental verification, the scale of the atom chain or its anonymous manner matters significantly to the overall representation ability of \emph{Anonymous-FP}. Generally, the typical scale {\$}r = 8{\$} enhances the performance on a series of real-world molecules, and specifically, the accuracy could level up to above {\$}93\%$ on all NCI datasets.},
+ author = {Liu, Xue and Cheng, Qian and Sun, Dan and Li, Xing and Wei, Wei and Zheng, Zhiming},
+ date = {04.01.2023},
+ title = {Anonymous Pattern Molecular Fingerprint and its Applications on Property  Identification},
+ url = {http://arxiv.org/pdf/2301.01620v1},
+ keywords = {Statistics - Applications},
+ file = {2301.01620v1:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\2301.01620v1.pdf:pdf}
+}
+
+
+@article{LopezLopez.2022,
+ abstract = {In analogy with structure-activity relationships (SARs), which are at the core of medicinal chemistry, studying structure-inactivity relationships (SIRs) is essential to understanding and predicting biological activity. Current computational methods should predict or distinguish 'activity' and 'inactivity' with the same confidence because both concepts are complementary. However, the lack of inactivity data, in particular in the public domain, limits the development of predictive models and its broad application. In this review, we encourage the scientific community to disclose and analyze high-confidence activity data considering both the labeled 'active' and 'inactive' compounds.},
+ author = {L{\'o}pez-L{\'o}pez, Edgar and {Fern{\'a}ndez-de Gortari}, Eli and Medina-Franco, Jos{\'e} L.},
+ year = {2022},
+ title = {Yes SIR! On the structure-inactivity relationships in drug discovery},
+ keywords = {Chemistry, Pharmaceutical;Chemoinformatics;Data mining;Database;Drug Discovery;Negative data;Open science;QSPR;Quantitative Structure-Activity Relationship},
+ pages = {2353--2362},
+ volume = {27},
+ number = {8},
+ journal = {Drug discovery today},
+ doi = {10.1016/j.drudis.2022.05.005},
+ file = {http://www.ncbi.nlm.nih.gov/pubmed/35561964},
+ file = {1-s2.0-S1359644622001921-main:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\1-s2.0-S1359644622001921-main.pdf:pdf}
+}
+
+
+@article{Morgan.1965,
+ author = {Morgan, H. L.},
+ year = {1965},
+ title = {The Generation of a Unique Machine Description for Chemical Structures-A Technique Developed at Chemical Abstracts Service},
+ pages = {107--113},
+ volume = {5},
+ number = {2},
+ issn = {0021-9576},
+ journal = {Journal of Chemical Documentation},
+ doi = {10.1021/c160017a018}
+}
+
+
+@article{Scardino.2023,
+ abstract = {A crucial component in structure-based drug discovery is the availability of high-quality three-dimensional structures of the protein target. Whenever experimental structures were not available, homology modeling has been, so far, the method of choice. Recently, AlphaFold (AF), an artificial-intelligence-based protein structure prediction method, has shown impressive results in terms of model accuracy. This outstanding success prompted us to evaluate how accurate AF models are from the perspective of docking-based drug discovery. We compared the high-throughput docking (HTD) performance of AF models with their corresponding experimental PDB structures using a benchmark set of 22 targets. The AF models showed consistently worse performance using four docking programs and two consensus techniques. Although AlphaFold shows a remarkable ability to predict protein architecture, this might not be enough to guarantee that AF models can be reliably used for HTD, and post-modeling refinement strategies might be key to increase the chances of success.},
+ author = {Scardino, Valeria and {Di Filippo}, Juan I. and Cavasotto, Claudio N.},
+ year = {2023},
+ title = {How good are AlphaFold models for docking-based virtual screening?},
+ keywords = {artificial intelligence;Computational chemistry;protein;protein folding},
+ pages = {105920},
+ volume = {26},
+ number = {1},
+ journal = {iScience},
+ doi = {10.1016/j.isci.2022.105920},
+ file = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9852548},
+ file = {http://www.ncbi.nlm.nih.gov/pubmed/36686396},
+ file = {main:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\main.pdf:pdf}
+}
+
+
+@article{Yang.2022,
+ abstract = {Molecular fingerprints are used to represent chemical (structural, physicochemical, etc.) properties of large-scale chemical sets in a low computational cost way. They have a prominent role in transforming chemical data sets into consistent input formats (bit strings or numeric values) suitable for in silico approaches. In this review, we summarize and classify common and state-of-the-art fingerprints into eight different types (dictionary based, circular, topological, pharmacophore, protein-ligand interaction, shape based, reinforced, and multi). We also highlight applications of fingerprints in early drug research and development (R{\&}D). Thus, this review provides a guide for the selection of appropriate fingerprints of compounds (or ligand-protein complexes) for use in drug R{\&}D.},
+ author = {Yang, Jingbo and Cai, Yiyang and Zhao, Kairui and Xie, Hongbo and Chen, Xiujie},
+ year = {2022},
+ title = {Concepts and applications of chemical fingerprint for hit and lead screening},
+ keywords = {Computational chemistry;Descriptors;drug R{\&}D;Molecular fingerprints},
+ pages = {103356},
+ volume = {27},
+ number = {11},
+ journal = {Drug discovery today},
+ doi = {10.1016/j.drudis.2022.103356},
+ file = {1-s2.0-S135964462200349X-main:K\:\\citavi_projects\\molecular fingerprints\\Citavi Attachments\\1-s2.0-S135964462200349X-main.pdf:pdf}
+}
+
+

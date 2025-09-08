@@ -1,0 +1,50 @@
+\chapter{Conclusion}
+
+In this thesis, mostly basic graph neural network architectures were analysed. This was due to the goal of comparing classical fingerprints as directly as possible to neural networks.
+However, it would be interesting to extend the investigation to other architectures like GAT and more complex MPNN-based architectures or also compare the performance of pretrained models like MolBERT.
+
+In this regard, it would also be tempting to investigate more sophisticated training routines, i.e. 
+and in the later epochs train specifically with activity cliff data.
+
+For instance, one could alter the activation function (either change it or modify the alpha-parameter of the scaled ones) during training.
+
+For this study, the Morgan fingerprint was used due to its simplicity and, above all, its similarity to the operations (like convolutions) which are applied in graph neural networks.
+Furthermore, it would be interesting to include other fingerprints (e.g. MACCS) and compare their performance. 
+
+I also should be noted that also other types of fingerprints exhibit similarities, i.e. Daylight fingerprints working on subgraph representations of the molecule.
+
+The contradictory results in previous studies often can be traced back to the application of different implementations, e.g. the Neural Fingerprint presented in Duvenaud et al. 2015 is indeed superior to the binary Morgan fingerprint on the ESOL dataset, but it is outperformed for the count-based version. 
+
+This leads to the idea that a task-specific feature extraction step (which could either be based on background knowledge, classical Machine Learning or an additional Deep Learning architecture) combined with a graph representation approach could improve results significantly.
+
+It also should be noted that even the analyses shown did not vary all possibly important parameters, i.e. the aggregation function used in the Message Passing step. One could also experiment with adaptive learning rates and more sophisticated loss functions.
+
+On the other hand, similar to baselines like linear regression and the prediction solely from global, unspecific properties like molecular weight, one should also bear in mind that the existence of an upper limit cannot be ruled out.
+
+Furthermore, the problem of splitting has been exposed in an unprecedented way.
+It was observed that the performance differences between architectures can be maximized for specific splits.
+
+Reliance solely on random and scaffold splits falsely suggests that Morgan Fingerprints and GNN architectures are equivalent, whereas other splitting techniques show that there are large differences.
+
+A major contribution of this thesis was the usage of the RdKit feature Morgan-Fingerprint features (which are originally conceived in Gobbi 1999) as input for a GNN. 
+(For instance, it can be argued that the atomic number is a bad feature: Of course, it linearly correlates almost perfectly with the atomic weight, but chemical properties cannot easily deduced because they rather depend on the group in the periodic table.)
+
+Interestingly, severe biases against fingerprints as well as graph-representations have been found in the reviews and publications proposing new Deep Learning models for molecular property prediction.
+
+For performance improvement, methods beyond dropout and normalization should be employed.
+
+
+Furthermore, it can be confirmed that benchmarks and performance assessments of new models should not rely only on typical benchmark datasets like MoleculeNET, but should, e.g., also incorporate custom datasets created from ChEMBL, ZINC or other sources.
+
+
+
+
+
+
+It should be noted that there is no training of the graph involved, all parameters are frozen.
+
+
+1)	Various methods of transforming a graph neural network representation into a fingerprint as similar as possible to the Morgan fingerprint have been conceived.
+2)	The performance on various datasets has been explored.
+3)	In particular,
+

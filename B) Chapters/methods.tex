@@ -1,0 +1,89 @@
+\chapter{Methods}
+
+\section{Basics}
+
+\subsection{GNN libraries}
+
+\subsubsection{Pytorch Geometric}
+
+Pytorch Geometric provides the most common GNN models, e.g. GCNs and GINs. These types are usually implemented in two versions.
+Pytorch \cite{Paszke.03.12.2019}
+
+\subsubsection{DGL}
+
+The DGL Model Zoo encompasses many GNN architectures for molecular property prediction, including neural versions of fingerprints (currently: AttentiveFP Predictor, GAT Predictor, GATv2 Predictor, MGCN Predictor, MPNN Predictor, SchNet Predictor, Weave Predicot, GIN Predictor, GNN OGB Predictor, Neural Fingerprint Predictor, Path-Augmented Grpah Transformer Predictor).
+
+\subsubsection{PyGHO}
+
+Pytorch Geometric Higher Order (PyGHO) provides models and appropriate data structures for Higher-Order GNNs \cite{Wang.28.11.2023}.
+
+It should be noted that, in contrast to Pytorch Geometric and DGL, this recently published library was not heavily used until now; thus it cannot be ascertained that the implementations are fully correct and actually represent the proposed models.
+
+\section{Evaluation and analysis}
+
+\subsection{Tanimoto similarity}
+
+Tanimoto similarity is a commonly used metric for assessing the similarity between molecular compound.
+The general formula is equivalent to Jaccard similarity and given by
+\[
+\text{Tanimoto / Jaccard Similarity} = \frac{|A \cap B|}{|A \cup B|}
+\]
+
+
+In a first step, the Morgan fingerprint of the molecules of interest is computed.
+(It should be noted that the settings for the Morgan fingerprint can influence the results, especially a fingerprint size set much too small leading to collisions.) Afterwards, the similarity between the two fingerprint vectors is calculated.
+
+
+
+
+
+In \cite{Duvenaud.30.09.2015}, the following generalization for continuous data is used for comparing neural and classical circular fingerprints:
+\[
+\text{distance}(x, y) = 1 - \frac{\sum \min(x_k, y_k)}{\sum \max(x_k, y_k)}
+\]
+
+
+\subsection{Metrics}
+
+
+
+\subsubsection{Regression tasks}
+
+The most commonly used loss functions are MAE and MSE loss, for the error of the final prediction either RMSE, 
+
+\begin{equation}
+\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
+\end{equation}
+and MAE, 
+\begin{equation}
+\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
+\end{equation}
+is used.
+This could be of interest for the tasks since often outliers influence the results dramatically.
+
+
+\subsubsection{Classification tasks}
+
+
+For benchmarking of the molecular tasks, often AUROC is used. However, due to the imbalance of most datasets, its usage has also been rightly criticized (\cite{Robinson.2020}) as misleading (at least when it is used as performance benchmark without combination of other metrics).
+
+In the following experiments for classification tasks primarily AUPRC is used.
+
+Precision or positive predictive value (PPV) is defined as
+\begin{equation}
+\text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}}
+\end{equation}
+
+\begin{equation}
+\text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}}
+\end{equation}
+
+Alternatively, in \cite{Jiang.2021}, positive predictive (PPV), i.e. precision, in combination with negative predictive value (NPV),
+
+\begin{equation}
+\text{NPV} = \frac{\text{True Negatives}}{\text{True Negatives} + \text{False Negatives}}
+\end{equation}
+, is recommended.
+
+
+Since PPV and NPV require a pre-defined threshold, it seems that AUPRC is most convenient for comparing the performance across different architectures.

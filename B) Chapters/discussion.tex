@@ -1,0 +1,109 @@
+\chapter{Discussion}
+
+
+\section{Datasets and Performance}
+
+
+\subsection{Count information and performance}
+
+In particular, count Morgan fingerprints provide significantly better results than bitwise fingerprints. There was no case found in which bitwise fingerprints show better performance, but the size of the difference is highly different depending on the dataset. In most cases, it is rather moderate, but in particular for the ESOL dataset, it is huge.
+For this superiority of count- over bitwise-fingerprints, the explanation is simple:
+In the ESOL-dataset, molecules with a high number of identical substructures are common.
+
+(even with a radius size of 4, they cannot be distinguished).
+
+This leads to the problem that fatty acids of different chain length cannot be distinguished anymore.
+
+The ESOL dataset contains a lot of fatty acids and related compounds and it is known that the target property, solubility, is highly negatively correlated with the length of fatty acids.
+
+
+
+It would be insightful which (generalized) similarity values GNN architectures get for these compounds.
+
+
+\section{Feature selection and Performance}
+
+Interestingly, despite the differences between ECFP-like Morgan fingerprint and feature fingerprint are very small and in general no fingerprint is superior to the other, the involved features perform differently used as input for a GNN.
+
+
+The results also show how much the optimal parameters, e.g. for the number of layers and the hidden channel size, differ (however, one should keep in mind that regularly multiple parameter combinations give equally good results). This puts many of the results published previously into perspective.
+E.g. in \cite{Deng.2023}, for the performance of GIN and GCN a much worse performance was reported than found in this study (in which they outperform binary fingerprints and are on equal footing with count fingerprints).
+Given the results of this study, the settings in \cite{Deng.2023} were severely biased against GNNs (in contrast to other studies like Duvenaud et al. 2015 which reported a superiority of graph representations solely because of the suboptimal fingerprint).
+(Of course, for practical purposes one has to keep in mind that the determination of optimized (hyper-)parameters can be a very costly process in terms of time and computational resources.) 
+
+On the other hand, hyperparameter optimization of GNNs was not done in-depth, but a default setting with an embeddings size of 300, a hidden channel size of 512 and 5 layers has been used.
+
+For instance, in \cite{vanTilborg.2022}, all models were trained for 300 epochs and the early stopping patience was set to ten epochs, which arguably is a very low number in this setting (also given the fact that most datasets are not very big), possibly excluding good solutions.
+
+By taking a different fingerprint for splitting, one could potentially create datasets which are neither biased against one of the compared representations.
+
+This also explains why the effect of the encoding of the features (integer or one-hot-encoding) affects the performance differently depending on the dataset. For some datasets, in particular the solubility related, properties like the molecular weight which can be directly evaluated from the atomic number is of high importance, whereas in other cases, the extraction of the meaningful features from the integer value is very difficult, but the one-hot-encoding allows that a particular atom type is associated with a specific weight.
+
+
+Recently, the problem with scaffold splitting was reported in another study \cite{Zhang.2024}.
+These findings have been confirmed.
+
+
+\cite{Comparison of fingerprint and GNN performance}
+
+One should again stress the fundamental difference between circular fingerprints: Due to its learnable parameters, GNNs can adapt to the current task; exactly this task-awareness potentially also leads to overfitting to the training data. 
+On the other hand, Morgan fingerprints only rely on the fixed, task-agnostic substructures which – so could be argued -, also maintain some predictive power out of distribution.
+
+Performance differences between fingerprints 
+This can be highly misleading, indicating that there is no significant difference between fingerprint and GNN predictions as seen on the ADME datasets.
+
+Furthermore, the focus on the magnitude of the error (e.g., RMSE) regularly conceals crucial differences, e.g. in the variance or the distribution of the errors. Indeed, for various datasets it was confirmed, although the mean error is about the same, the variance of the error between runs is even of different order of magnitude.
+
+
+(Additionally, it should be noted that different hyperparameter settings can lead to different results. In particular for the frequent case that the performance difference between the architectures is not very large, the choice of the parameters can easily alter the ranking of performance.)
+
+For a given dataset, GNNs are much more sensitive to the split technique or different subset selections.
+
+The problem for unequal densities in the case of GNNs for regression tasks is tightly related to the imbalanced datasets for classification.
+
+
+Advanced splitting techniques show that an unbiased performance comparison between molecular fingerprints (e.g., coupled to a DNN as classifier) and a graph representation (as well using a DNN) is much more complex.
+
+Weight and task-specific splits reveal much bigger differences.
+
+For limited training data, the likelihood that there are serious gaps in the distribution of the objective values is much higher etc.
+
+
+\section{Splits and Performance}
+
+Scaffold splitting is a recommended split technique for the discovery of new potential categories (for this reason, it is recommended, e.g., for the HIV dataset).
+
+Whereas for random splitting the ratio should be on average equal to the full dataset, other splitting techniques can highly distort it.
+For regression tasks, the problem is similar: Depending on the split, the distribution can significantly differ.
+
+(The problem is - in particular in the context of activity cliffs - that high compound similarity clearly positively correlates with 
+(There are of course exceptions, in particular when bitwise fingerprints are used in combination with a small radius: In this case, 'identical' - i.e. Tanimoto similarity of 1 - compounds can differ highly on specific values, for example solubility.)
+
+
+\section{Investigation of frozen layers}
+
+Interestingly, for most datasets, frozen GIN layers provide much worse results when coupled with batch normalization.
+
+, i.e. a typical case of oversmoothing.
+
+The effect of frozen layers has been analyzed checking Tanimoto similarity and layer outputs.
+Batch normalization reduces the variability, giving rise to the counter-intuitive result that for frozen layers it worsens performance.
+
+
+
+For the Morgan Fingerprints, the difficulties are less pronounced; however, also in these cases the outcome of hyperparameter optimization runs can differ significantly (examples are shown in the results).
+
+
+
+For comparison of the architectures, it is not only important to know how large the differences in terms of the error are, but also whether the same instances are giving rise to high errors, i.e. the correlation between the outcomes.
+
+This behaviour is greatly amplified by irregular splitting techniques.
+
+In many cases, variance is much higher for architectures using graph representations. Whereas runs with the optimized FPN give almost identical results, there is a wider range for all graph representations.
+
+On well-known datasets (e.g., ESOL) it was demonstrated that the splitting technique highly influences the performance differences between the architectures. Further results have shown that this finding can be generalized.
+
+
+From this perspective, the GNN architectures also could forget structures which are not of importance for the task at hand, leading to better generalization.
+
+However, it should be noted that the performance increase for feature-based fingerprints and feature subsets is limited. Depending on the task, also pharmacophore-based fingerprints could be used etc.
