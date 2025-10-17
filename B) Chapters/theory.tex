@@ -337,7 +337,49 @@ Each subgraph up to a specific radius is evaluated; as base GNN various architec
 In \cite{Zhang.2021}, this architecture was tested on the QM9 dataset and the HIV and PCBA datasets.
 
 
-\subsection{Pooling operations}
+
+\subsection{Combination of fingerprint and GNN information}
+
+Meanwhile, it was also explored whether the combination of molecular fingerprint and graph-based representations can improve predictive power. A simple approach computes both separately and passes both outputs to a final classifier (e.g. a dense neural network layer, but also a different architecture depending on the task would be possible).
+
+In \cite{Zhang.2024}, several different fingerprints were computed and a feature selection module created a reduced version by maximizing relevance and minimizing redundancy. 
+
+Similar to \cite{Zhang.2024}, fingerprint and GNN information was also combined.
+
+
+In \cite{Liu.2025}, a model called fingerprint-enhanced hierarchical graph neural network (FH-GNN) is proposed.
+On eight benchmark datasets from MoleculeNet, it outperformed many baseline models and competitors.  
+
+
+In many cases, results are ambiguous. For example, the complex graph-based architecture proposed in \cite{Yang.2019} achieved superior results on some datasets, but on other it performed equal or even worse than a Random Fores classifier applied on fixed molecular fingerprint representations.
+
+Another approach uses fragmentation methods like BRICS to obtain processable, chemically or archaeologically meaningful substructures of a molecule \cite{Degen.2008,Jinsong.2024,ZhangBRICS.2024,Liu.2017,Diao.2023}.
+
+
+\subsection{More complex architectures for molecular property predictions}
+
+uses BRICS
+
+MPNN \cite{Gilmer.05.04.2017}.
+Different architectures are termed MPNN, the central property is a message passing and a readout step.
+
+or hierarchical molecular graph neural networks (HimGNN) \cite{Han.2023}, which applies a Transformer architecture to fuse atom- and molecular motif-based graphs.
+
+Hyper-Mol creates a molecular graph representation based on the preceding extraction of ECFP fingerprints \cite{Cui.2023}.
+
+A message passing algorithm also using bond information, D-MPNN, was proposed in \cite{Yang.2019}.
+
+and a motif extraction step \cite{Zang.2023}
+
+Bitwise and Count fingerprints were also used as baseline in \cite{Yang.2019}. For some datasets, similarly large differences were found, but not in all; a plausible explanation is different, and possibly insufficient, hyperparameter optimization. Indeed, it is noted in \cite{Yang.2019}, that all architectures (baseline as well as the newly proposed D-MPNN) are applied with unspecified default parameters (making a fair comparison virtually impossible, see results and discussion section).
+
+Another approach features data augmentation and contrastive learning \cite{Wang.2022} .Motif-driven contrastive learning is also applied in \cite{Zhang.2024b} and multiple molecular graph representations of different granularity are combined in \cite{Kengkanna.2024}.
+
+Another self-supervised pre-training scheme was proposed in \cite{Wan.2025}. In \cite{Wan.2025}, also performance in the presence of activity cliffs was studied in more detail. Similarly DGCL, uses a similar combination of two GNNs (GIN and GAT) and additionally incorporates fingerprint information \cite{Jiang.2024}. The version with both GNNs was compared to architectures consisting of ECFPs combined with pre-trained GIN and GAT layers. These combinations improved performance on some datasets (however, unfortunately, the ECFP baseline was not checked, so it is difficult to fully assess the performance gain).
+
+Other graph-based approaches apply self-supervised learning. For instance, GROVER (Graph Representation frOm self-superVised mEssage passing tRansformer), a transformer-based framework with 100 million parameters, which was pre-trained on 10 million unlabelled molecules \cite{Rong.2020}, is widely used.
+
+Similarly, MolBERT is a BERT model pre-trained on four million unlabeled compounds which can be used for  molecular property prediction tasks \cite{Li.2021}. Interestingly, as shown in the discussion below in more detail, even these large models do not persistently outperform simpler GNN architectures or even ML classifier acting on Morgan fingerprints.
 
 \section{Activity cliffs}
 
