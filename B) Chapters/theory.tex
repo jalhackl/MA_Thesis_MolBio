@@ -370,7 +370,7 @@ or hierarchical molecular graph neural networks (HimGNN) \cite{Han.2023}, which 
 
 Hyper-Mol creates a molecular graph representation based on the preceding extraction of ECFP fingerprints \cite{Cui.2023}.
 
-A message passing algorithm also using bond information, termed directed MPNN (D-MPNN), was proposed in \cite{Yang.2019}.
+A message passing algorithm using bond information (instead of the usual node based message passing), termed directed MPNN (D-MPNN), was proposed in \cite{Yang.2019}. This message passing scheme is directed in such a way that the messages at the current step are not influenced by the message in the reverse direction from the previous step, attenuating the problem of tottering.
 
 
 Bitwise and Count fingerprints were also used as baseline in \cite{Yang.2019}. For some datasets, similarly large differences were found, but not in all; a plausible explanation is different, and possibly insufficient, hyperparameter optimization. Indeed, it is noted in \cite{Yang.2019}, that all architectures (baseline as well as the newly proposed D-MPNN) are applied with unspecified default parameters (making a fair comparison virtually impossible, see results and discussion section).
