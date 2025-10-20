@@ -4,10 +4,8 @@
 
 \section{Molecular fingerprints}
 
-Molecular fingerprint are used in cheminformatics to represent the structure of molecules for various purposes, such as similarity searching and machine learning in drug discovery.
-A hash function is used (see also methods section).
-and daylight fingerprints, other descriptors directly incorporate physicochemical properties, e.g. the PaDel-descriptors \cite{Yap.2011}.
-\cite{Capecchi.2020}
+Molecular fingerprint are wiedely used in cheminformatics to represent the structure of molecules for various purposes, such as similarity searching and machine learning in drug discovery.
+A plethora of such fariants exist, e.g. Morgan and daylight fingerprints, which extract substructures os the molecule, whereas other descriptors directly incorporate physicochemical properties, e.g. the PaDel-descriptors \cite{Yap.2011}. In the last years, many extensions for improving discernibility of represented models were proposed (see e.g. \cite{Capecchi.2020}).
 
 \subsection{Morgan fingerprint}
 
@@ -16,15 +14,15 @@ They are based on the Morgan algorithm, which was first introduced in 1965 \cite
 
 At the initialization of the algorithm, an atomic representation based on typical features like atom number is created. Each atom in the molecule is assigned an initial identifier based on its atomic properties, such as atomic number, degree (number of bonds), formal charge, and other features. Usually, the features include only very basic properties. Starting at each atom, the algorithm iteratively explores neighboring atoms within a given radius. This circular exploration of the neighbourhood of each atom gives rise to substrctures of increasing size (at radius=1, only the neighbours of the atom are encompassed, for radius=1, also the neighbours of the neighbours and so on).
 
-Using the ECFP-fingerprints based on the Morgan algorithm, one has to be cautios that the number indicates the diameter, i.e. ECFP4 has a radius of 2, ECFP6 of 3.
+Using the ECFP-fingerprints based on the Morgan algorithm, one has to be cautious that the number indicates the diameter, i.e. ECFP4 has a radius of 2, ECFP6 of 3.
 
-A hash function is applied to create for each unique substructure a hash value which serves as an almost - except in the case of collisions - unique identifier. A binary feature vector of fixed length is initialized with zeros and the substructure information is stored by setting for each hash value the according bit in the vector to one, i.e. each entry in the vector tells whether a particular substructure is present or absent.
+A hash function is applied to create for each unique substructure a hash value which serves as an almost - except, of course, in the case of collisions - unique identifier. A binary feature vector of fixed length is initialized with zeros and the substructure information is stored by setting for each hash value the according bit in the vector to one, i.e. each entry in the vector tells whether a particular substructure is present or absent.
 
 This process captures structural diversity in a molecule, allowing for comparison between different compounds.
 
 The detrimental occurrence of collisions, i.e. two substructures get the same hash value, can be reduced by increasing the fingerprint size, i.e. the length of the feature vector.
 
-One can also use count-Fingerprints. In this case, also the frequency of each unique substructure in a molecule is counted and the according value stored in the vector as integer.
+An extension of the Morgan fingerprint does not use bitwise entries, but counts the number of the substructures. In this case, also the frequency of each unique substructure in a molecule is counted and the according value stored in the vector as integer. Of course, in case of molecules composed of many analogous constituents, e.g. fatty chains, this can highly elevate discernibility.
 
 
 Fig. \ref{fig:morgan_radius} shows the radii 1 and 2 of selects atoms of styrene and fig. \ref{fig:styrene_all_subs_morgan} visualizes all substructures for radius 0 to radius 2 of styrene.
@@ -51,7 +49,7 @@ Fig. \ref{fig:morgan_radius} shows the radii 1 and 2 of selects atoms of styrene
     \centering
     \includegraphics[width=1\linewidth]{substructures_radius1_only_topology.png}
     \caption{Enter Caption}
-    \label{fig:enter-label}
+    \label{fig:substructures_radius1_only_topology}
 \end{figure}
 
 
@@ -61,26 +59,28 @@ Graph Neural Networks work on graph data; they can be seen as generalizations of
 
 Unlike traditional fingerprints, GNNs treat molecules as graphs, where atoms are nodes and bonds are edges. This structure allows GNNs to directly process the molecular graph and learn more flexible, task-specific representations via message-passing mechanisms. Given that GNNs operate on graph data, they are naturally suited for capturing the intricate connectivity patterns of molecules, which are central to their properties.
 
-They can be applied for different purposes, like node (for individual nodes of the graph, labels or values are predicted)    and graph classification (for the whole graph, a label or value is predicted) as well as link prediction (prediction of the likelihood that an edge exists between specific nodes). In the context of molecular property prediction, one usually deals with graph classification problems, e.g. the label (toxicity, inhibitory activity, etc.) or a value (solubility, lipophilicity, etc.) for the graph which represents a specific molecular compound is determined.
+They can be applied for different purposes, like node (for individual nodes of the graph, labels or values are predicted)    and graph classification (for the whole graph, a label or value is predicted) as well as link prediction (prediction of the likelihood that an edge exists between specific nodes). In the context of molecular property prediction, one usually deals with graph classification problems, e.g. the label (indicating toxicity, inhibitory activity, etc.) or a value (solubility, lipophilicity, etc.) for the graph which represents a specific molecular compound is determined.
 
 In the following experiments, in particular Graph Convolutional Networks (GCNs) and Graph Isomorphism Networks (GINs) were considered.
 
 It should be noted that there is a much greater variety of GNNs. Some of them, like GATs, yield impressive performance in some tasks.
 
-Most Graph Neural Networks rely on message passing. In this step, each node of the graph passes its feature information to its neighbors and aggregates the information received from them. This process is repeated across multiple layers, allowing each node to gather information from increasingly distant nodes in the graph.
+Most Graph Neural Networks rely on message passing. Different specific architectures are termed MPNN, the central property of the general framework is that a message passing and a readout step are involved. In the context of molecular property prediction, this scheme was introduced in \cite{Gilmer.05.04.2017}.
 
-After the graph layer operations, the output has to be arranged in such a way that it can be used for the final prediction.
+In the message passing step, each node of the graph passes its feature information to its neighbors and aggregates the information received from them. This process is repeated across multiple layers, allowing each node to gather information from increasingly distant nodes in the graph.
+
+After the graph layer operations, the output has to be arranged in such a way that it can be used for the final prediction, done in the readout step.
 Common read-out functions are max and mean; for graph classification and in molecular property prediction, it has turned out that sum is most powerful.
 
 This is usually done using a dense neural network (DNN). (In principle, also a different classifier, e.g. SVM or gradient boost algorithms, could be used; however, for such a set-up backpropagation is probably not feasible. One would have to train the GNN with a simple output layer and after training use the embedding of the GNN as input for the classifier.)
 
-In contrast to Morgan fingerprints, which either provide binary or integer vectors, the GNN architectures usually output a real-valued vector.
+In contrast to Morgan fingerprints, which either provide binary or integer vectors, the GNN architectures usually output a real-valued vector. (Some proposals for creating a representation more similar are proposed below.)
 
 In principle, all GNN architectures suitable for Graph classification can be used for molecular property prediction; however, also some variants like the Attentive Fingerprint are explicitly modeled for this task.
 
 \subsubsection{GCNs}
 
-One of the generally most commonly used GNN architectures is the Graph Convolutional Neural Network. It can be seen as a generalization of CNNs; Whereas the latter can only process input of fixed size, GCNs act directly on the graph representation. As for most graph-based representations, the graph information consists of the adjacency matrix (which in the case of molecule property prediction usually encodes the bonds between atoms) and a feature matrix (which encompasses the physicochemical features of the atoms, e.g. atom type).
+One of the most commonly used GNN architectures is the Graph Convolutional Neural Network. It can be seen as a generalization of CNNs; whereas the latter can only process input of fixed size, GCNs act directly on the graph representation. As for most graph-based representations, the graph information consists of the adjacency matrix (which in the case of molecule property prediction usually encodes the bonds between atoms) and a feature matrix (which encompasses the physicochemical features of the atoms, e.g. atom type).
 
 Usually, multiple graph convolution layers are stacked. Each layer enriches the represention of a specific node by exploring larger neighbourhoods of the graph. In particular, the first layer aggregates features from the direct neighbours. After this layer, information of the neighbours is stored in each feature representation, so in the next layer also information about the neighbours of the neighbours is incorporated etc.
 
@@ -90,7 +90,7 @@ H^{(l+1)} = \sigma\left(\tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} H^{(l)} W^{(
 \end{equation}
 
 
-, where W denotes the learnable weight matrix, A the adjacency matrix and D the diagonal degree matrix. \begin{math}\sigma\end{math} corresponds to an activation function, e.g. ReLU.
+, where W denotes the learnable weight matrix, A the adjacency matrix and D the diagonal degree matrix. \begin{math}\sigma\end{math} corresponds to an activation function, e.g. the often used Rectified Linear Unit activation function (ReLU).
 
 
 One disadvantage of GCNs is, that they use a mean-based aggregation and this function is not injective. This means that different graphs can lead to the same graph embedding and the network cannot distinguish between the two graphs anymore. One example is visualized in Figure 3 below. Assuming the node and edge properties are identical, GCNs could create the same hidden embedding for these two graphs.
@@ -148,8 +148,7 @@ Where:
     \item \( \mathcal{N}(v) \) is the set of neighbors of node \( v \),
     \item \( e_{uv} \) is the feature vector of the edge between nodes \( u \) and \( v \),
     \item \( \epsilon^{(k)} \) is a learnable or fixed scalar parameter for layer \( k \),
-    \item \(\text{MLP}^{(k)}\) is a multi-layer perceptron for layer \( k \),
-    \item \(\text{ReLU}(\cdot)\) is the Rectified Linear Unit activation function.
+    \item \(\text{MLP}^{(k)}\) is a multi-layer perceptron for layer \( k \)
 \end{itemize}
 
 Optional: If edge features \( e_{uv} \) are processed before aggregation, the edge transformation can be expressed as:
@@ -267,7 +266,7 @@ In contrast to the processing the sum of the neighbour nodes and self-node updat
 \subsubsection{Attentive Fingerprint}
 
 The Attentive Fingerprint was proposed in \cite{Xiong.2020} as an extension of the Neural Fingerprint leveraging attention.
-In contrast to GCNs and GINs, it also incorporates edge information directly. It extends the idea of the Neural Fingerprint with an attention mechanism similar to that used in GAT.
+In contrast to GCNs and GINs, it also incorporates edge information directly. It extends the idea of the Neural Fingerprint with an attention mechanism similar to that used in GAT. In fact, GAT layers are part of the attentive fingerprint, i.e. it is a specific implementation of this architecture.
 The update step in the Attentive Fingerprint shares similarities with the approach used in GCNs, but it integrates attention weights to emphasize the most relevant interactions. These attention weights are computed using a combination of GRU cells and GAT convolutions. 
 
 The implementation provided via PyTorch Geometric uses the original GAT formulation for these convolutions.
@@ -363,8 +362,6 @@ In \cite{Alon.09.06.2020}, an additional fully adjacent layer (in which all node
 
 For example, \cite{Liu.2025} and \cite{Zang.2023} use the BRICS algorithm to create fragments for a hierarchical molecular graph.
 
-MPNN \cite{Gilmer.05.04.2017}.
-Different architectures are termed MPNN, the central property is that the perform a message passing and a readout step.
 
 or hierarchical molecular graph neural networks (HimGNN) \cite{Han.2023}, which applies a Transformer architecture to fuse atom- and molecular motif-based graphs.
 
@@ -396,7 +393,7 @@ Also \cite{Jiang.2021} rightly mentions that these evaluations are often rather 
 
 \section{Previous work}
 
-Similarly, in \cite{Jiang.2021} classical fingerprints in combination with a DNN or a classical ML algorithm (e.g. support vector machines or random forests) outperformed graph-based models in most tasks. Only for some larger and multi-task datasets graph representations yield better performance than the descriptor-based models.
+Similarly, in \cite{Jiang.2021} classical fingerprints in combination with a DNN or a classical ML algorithm (e.g. support vector machines or random forests) outperformed graph-based models in most tasks. Only for some larger and multi-task datasets graph representations yield better performance than the descriptor-based models, implying that data availability is critical. (However, studies systematically evaluating the impact of additional data on specific datasets are largely missing.)
 The graph models investigated in \cite{Jiang.2021} were GCNs, attentive FP and a MPNN model; GIN was not applied.
 
 Graph-based models show better performance only on larger dataset.
@@ -418,9 +415,9 @@ In \cite{Jiang.2021}, the models were evaluated on 50 random splits. Although on
 Moreover, hyperparameter optimization only processed a small list of possible values for parameters like the hidden channel size within a limited range, possibly reasonable parameter combinations were missing; for continuous variables like the learning rate only a few possible values were assigned. Furthermore, techniques like normalization layers were not considered (dropout was only a parameter for the final prediction layer). 
 
 
-Moreover, a meta-analysis of the results is hardly possible because often the indication of crucial parameters is missing. For instance, it is not always clear which atom and node features have been used (it can be assumed that likely the default featurizer of the used GNN framework was applied; since many frameworks have specialized featurizers for specific architectures, it is even more difficult to decide).
+However, a meta-analysis of the results is hardly possible because often the indication of crucial parameters is missing. For instance, it is not always clear which atom and node features have been used (it can be assumed that likely the default featurizer of the used GNN framework was applied; since many frameworks have specialized featurizers for specific architectures, it is even more difficult to decide). Hence, it could be necessary to evaluate the impact of such factors.
 
-Similarly, the Attentive FP, i.e. the application of GAT to molecular property prediction, proposed in Xiong et al. 2020 showed superior performance in almost all tasks from MoleculeNet. However, only three runs were performed and for regression tasks like ESOL solely random splits were applied. Furthermore, as in \cite{Duvenaud.30.09.2015}, it seems that the ECFP used only bitwise features which leads to much worse performance of the fingerprint.
+In the same vein, the Attentive FP, i.e. the application of GAT to molecular property prediction, proposed in Xiong et al. 2020 showed superior performance in almost all tasks from MoleculeNet. However, only three runs were performed and for regression tasks like ESOL solely random splits were applied. Furthermore, as in \cite{Duvenaud.30.09.2015}, it seems that the ECFP used only bitwise features which leads to much worse performance of the fingerprint.
 
 For the regression tasks, mostly the random split is used. Furthermore, for the classification tasks of MoleculeNet, except for the MUV-dataset, usually ROC-AUC is used as metric, although all datasets are rather imbalanced (e.g. in \cite{Zhang.2024}). In particular, it should be noted that for scaffold splits the imbalance can be much higher than for the complete dataset, hence leading to a misleading ROC-AUC.
 
@@ -439,20 +436,17 @@ Furthermore, the inference from low p-values (without accompanying effect sizes)
 
 \section{Potential Pitfalls and Limitations}
 
-
-Firstly, the limits of expressivity, i.e. there are graphs which cannot be distinguished by GNNs working with the message passing paradigm, have to be mentioned.
-
-However, since in most molecular property prediction tasks the central goal is not to have a unique mapping of each molecule, but a representation which allows an accurate prediction of the objective value. (In principle, for a binary classification task it would be sufficient to map all input graphs to two different output vectors.)
-
 Over-fitting, over-smoothing, and over-squashing represent significant challenges to the performance of Graph Neural Networks (GNNs) \cite{JunXia.2023}.
 
-Over-smoothing occurs predominantly in models with stacked graph layers. After several layers, node embeddings tend to converge to similar values, which diminishes the ability of the model to differentiate between nodes and often leads to degraded performance.
+Fundamental limits of expressivity, i.e. there are graphs which cannot be distinguished by GNNs working with the message passing paradigm, have also to be taken into account. However, since in most molecular property prediction tasks the central goal is not to have a unique mapping of each molecule, but a representation which allows an accurate prediction of the objective value. (In principle, for a binary classification task it would be sufficient to map all input graphs to two different output vectors.)
 
-Over-squashing arises when the graph topology creates a bottleneck for message propagation, distorting the flow of information. While this phenomenon can severely affect certain graph types, it is generally less problematic for smaller graphs, such as those commonly used in molecular applications.
+
+Over-smoothing occurs predominantly in models with stacked graph layers. After several layers, node embeddings tend to converge to similar values, which diminishes the ability of the model to differentiate between nodes and often leads to degraded performance. This is highly problematic in the context of molecular property prediction.
 
 
 Over-fitting is particularly challenging in molecular property prediction tasks. This issue stems from two main factors: Firstly, there is often a limited availability of training examples, and, exacerbating the problem, data is often highly imbalanced. Secondly, one has to consider substantial differences between training and test examples, which make over-fitting to the training data especially detrimental.
 
+Over-squashing arises when the graph topology creates a bottleneck for message propagation, distorting the flow of information. While this phenomenon can severely affect certain graph types, it is generally less problematic for smaller graphs, such as those commonly used in molecular applications.
 
 \cite{CortesCiriano.2019} used Morgan Fingerprints with a comparatively small size (128) as input for DNN and RF ensembles, reporting that larger fingerprint sizes did only marginally improve results. In this publication, another technique called snapshot ensemble learning is introduced \cite{CortesCiriano.2019}. The training process is divided into cycles. After each converged cycle the learning rate is set back to its original value.
 

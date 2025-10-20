@@ -4,20 +4,15 @@
 
 \subsection{GNN libraries}
 
-\subsubsection{Pytorch Geometric}
-
-Pytorch Geometric provides the most common GNN models, e.g. GCNs and GINs. These types are usually implemented in two versions.
+For implementation of the neural network architectures, mostly Pytorch and, for the GNNs, Pytorch Geometric were used. Pytorch Geometric provides the most common GNN models, e.g. GCNs and GINs. These types are usually implemented in two versions.
 Pytorch \cite{Paszke.03.12.2019}
 
-\subsubsection{DGL}
-
+Another widely used GNN library, also able to act on top of Pytorch, is DGL.
 The DGL Model Zoo encompasses many GNN architectures for molecular property prediction, including neural versions of fingerprints (currently: AttentiveFP Predictor, GAT Predictor, GATv2 Predictor, MGCN Predictor, MPNN Predictor, SchNet Predictor, Weave Predicot, GIN Predictor, GNN OGB Predictor, Neural Fingerprint Predictor, Path-Augmented Grpah Transformer Predictor).
 
-\subsubsection{PyGHO}
+It was additionally used for some models and to apply some splitting techniques.
 
-Pytorch Geometric Higher Order (PyGHO) provides models and appropriate data structures for Higher-Order GNNs \cite{Wang.28.11.2023}.
-
-It should be noted that, in contrast to Pytorch Geometric and DGL, this recently published library was not heavily used until now; thus it cannot be ascertained that the implementations are fully correct and actually represent the proposed models.
+The library Pytorch Geometric Higher Order (PyGHO) provides models and appropriate data structures for Higher-Order GNNs \cite{Wang.28.11.2023}.It should be noted that, in contrast to Pytorch Geometric and DGL, this recently published library was not heavily used until now; thus it cannot be ascertained that the implementations are fully correct and actually represent the proposed models.
 
 \section{Evaluation and analysis}
 

@@ -152,20 +152,26 @@ One of the examples investigated in this thesis is IGROV-1, a well-established c
 
 
 The LIT-PCBA dataset aims to provide an unbiased dataset for machine learning and virtual screening. It consists of entries of bioactivity data from the PubChem BioAssay database (PCBA). 
-It consists of 15 targets, 7844 active, and 407381 inactive compounds\cite{TranNguyen.2020}. The data set encompasses information from 149 dose-response PubChem bioassays. Properties like molecular weight are within a similar range for active and inactive compounds. False positives and assay artifacts were removed. All examples in LIT-PCBA are extremely imbalanced. For most proteins, only a few active compounds are given. This ratio mimics the setting of experimental screening.
+It consists of 15 targets, 7844 active, and 407381 inactive compounds\cite{TranNguyen.2020}. The data set encompasses information from 149 dose-response PubChem bioassays. Properties like molecular weight are within a similar range for active and inactive compounds. False positives and assay artifacts were removed.
+
+All examples in LIT-PCBA are extremely imbalanced. For most proteins, only a few active compounds are given, mimicking the setting of experimental screening.
 Examples are the TP53 Cellular tumor antigen p53 inhibitor (602 actives, 10488 total) and the Estrogen receptor β antagonist (477 actives, 10486 total).
 
-The corresponding ligand sets were unbiased by the asymmetric validation embedding (AVE) procedure. AVE systematically measures the pairwise distance in chemical space between molecules belonging to four sets of compounds. Since the unbiasing is based on ECFP4 fingerprints, one could assumed that it is ‘biased’ against the Morgan fingerprints.
+The corresponding ligand sets were unbiased by the asymmetric validation embedding (AVE) procedure. AVE systematically measures the pairwise distance in chemical space between molecules belonging to four sets of compounds. Since the unbiasing is based on ECFP4 fingerprints, one could assumed that it is ‘biased’ against the Morgan fingerprints, since the emering datasets are highly diverse in terms of the fingerprint representation.
 
 
 \subsubsection{Activity data from ChEMBL}
 
 
 A further activity dataset was proposed in \cite{CortesCiriano.2019}. It contains data from ChEMBL concerning the inhibition of diverse molecular compounds like the neurotransmitter dopamine, estrogen and the protein HERG which acts as a potassium ion channel. These molecular compounds are of great interest for drug discovery; e.g., inhibition of hERG is a side-effect of some drugs, leading to severe heart failure. 
+
 In a similar vein, an opioid-related dataset from ChEMBL was assembled for benchmarking in \cite{Deng.2023}. It includes K-related targets like multi-drug resistance protein 1 (MDR1), cytochrome P450 2D6 (CYP2D6) and CYP3A4. Relevant PD-related targets include the μ-opioid receptor (MOR), δ-opioid receptor (DOR), and κ-opioid receptor (KOR).
-In \cite{Deng.2023}, only classical fingerprint models and pretrained models like Grover and MolBERT were applied on these datasets. Fingerprints were never outperformed, but for smaller datasets they were much better than pretrained transformer models (for small data, MolBERT was worst by far). In the following, it will be investigated how graph representations perform on these datasets.
+
+In \cite{Deng.2023}, only classical fingerprint models and pretrained models like Grover and MolBERT were applied on these datasets. Fingerprints were never outperformed, but for smaller datasets they were much better than pretrained transformer models (for small data, MolBERT was worst by far). 
+
+In the following, it will be investigated how graph representations perform on these datasets.
 
 Two examples from the dataset are the neurotransmitter dopamine and hERG, the alpha subunit of a potassium ion channel essential for cardiac function, whose binding by drugs can lead to adverse side effects.
 
-The selection investigated in this thesis was chosen in such a way that it provides a rather diverse subset, e.g. concerning data size as well as function, and allows, if possible, a direct comparison with the results in the publication it was firstly used. For example, IGROV-1 was presented as paradigmatic example in \cite{Zhang.2024}.
+The selection investigated in this thesis was chosen in such a way that it provides a rather diverse subset, e.g. concerning data size as well as function, and allows, if possible, a direct comparison with the results in the publication in which it was firstly used. For example, IGROV-1 was presented as paradigmatic example in \cite{Zhang.2024}.
 
