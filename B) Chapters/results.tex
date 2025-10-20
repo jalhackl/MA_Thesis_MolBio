@@ -4,6 +4,18 @@ The evaluation of performance differences is of utmost importance since it also 
 
 Similarly, it could be insightful to check whether the same difference ranking occurs for different runs and, in case of different splits, and whether similar molecules – or the same molecules in case they appear multiple times in the test set – behave also similarly.
 
+A thorough comparison of all these schemes is beyond the scope of this work.
+In some cases, probably optimal solutions are thus overlooked and one should generalize with caution.
+
+The focus was rather on two related questions:
+
+\begin{enumerate}
+	\item Which factors can help explain the differing results in previous work?
+	\item Are there at least some basic guidelines for deciding which method is better performing?
+\end{enumerate}
+
+This issue is very common, compare e.g. the results in \cite{Jiang.2024,Liu.2025}.
+
 \subsection{Preliminary remarks}
 
 If the main reason for an inferior performance of GNNs compared to Morgan Fingerprints is overfitting, whereas the ability to discern substructures is equal, it should be possible to compensate for these detrimental factors by techniques like dropout or altered training data and achieve at least equal performance.
@@ -51,6 +63,8 @@ RdKit also supports the computation of rooted fingerprints: Instead of one finge
 Summing up of all rooted substructures should yield a fingerprint equivalent to the molecule fingerprint; however, there will be substructures counted multiple times.
 
 
+number of unique nodes per embedding
+
 \section{Hyperparameter optimization}
 
 If not stated otherwise, in the boxplots all information given before 'opt. hyperparameters' indicates fixed parameters (this is important since parameters to be optimized in some runs are treated as fixed in other ones, e.g. Jumping Knowledge).
@@ -94,6 +108,22 @@ In the setting with one layer of the same size as the graph output channels, dro
 
 
 These differences on the task split call for further explanations.
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.15\linewidth]{esol_top5_similarity_binary_count.png}
+	\caption{esol_top5_similarity_binary_count}
+	\label{fig:esol_top5_similarity_binary_count}
+\end{figure}
+
+\ref{fig:esol_top5_similarity_binary_count} clearly shows this effect.
+
+
+\subsection{BACE}
+
+On this classification task, for many splits classical fingerprints combined with a dense layer perform better than GIN or GCN models.
 
 \subsection{Lipophilicity}
 
@@ -268,6 +298,8 @@ Transformer and to the technique of inserting a supernode which is connected to 
 It also seems to be interesting to avoid the bipartite structure of graph representation and final classifier.
 The graph channel size is subsequently decreased to 1. Since the output after the final graph layer has already size [1, batchsize], a further classification step is not necessary.
 
+\subsection{Binary networks etc.}
+
 \subsection{Incorporation of global properties}
 
 \section{Custom Loss Functions}
@@ -319,6 +351,20 @@ Thus, the layers have been investigated for such examples.
 
 consisting of alkanes and fatty acids of different length.
 \cite{Schweidtmann.2023}
+Given that binary fingerprints should hardly be able to discern these structures, this is a good check for the reason of performance differences.
+
+
+\subsection{Influcence of activity cliffs}
+
+prediction error cliffs, i.e. molecules with a very similar objective value, but a high difference in error (for a specific ML/DL model). 
+
+Fig
+show interesting differences.
+
+\subsection{Unique mapping of molecules}
+
+
+
 
 \subsection{Subgraph GNNs}
 

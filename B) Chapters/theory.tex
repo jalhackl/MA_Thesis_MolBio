@@ -358,18 +358,20 @@ Another approach uses fragmentation methods like BRICS to obtain processable, ch
 
 \subsection{More complex architectures for molecular property predictions}
 
-uses BRICS
+
+In \cite{Alon.09.06.2020}, an additional fully adjacent layer (in which all nodes are connected) was applied in order to attenuate bottleneck effects.
+
+For example, \cite{Liu.2025} and \cite{Zang.2023} use the BRICS algorithm to create fragments for a hierarchical molecular graph.
 
 MPNN \cite{Gilmer.05.04.2017}.
-Different architectures are termed MPNN, the central property is a message passing and a readout step.
+Different architectures are termed MPNN, the central property is that the perform a message passing and a readout step.
 
 or hierarchical molecular graph neural networks (HimGNN) \cite{Han.2023}, which applies a Transformer architecture to fuse atom- and molecular motif-based graphs.
 
 Hyper-Mol creates a molecular graph representation based on the preceding extraction of ECFP fingerprints \cite{Cui.2023}.
 
-A message passing algorithm also using bond information, D-MPNN, was proposed in \cite{Yang.2019}.
+A message passing algorithm also using bond information, termed directed MPNN (D-MPNN), was proposed in \cite{Yang.2019}.
 
-and a motif extraction step \cite{Zang.2023}
 
 Bitwise and Count fingerprints were also used as baseline in \cite{Yang.2019}. For some datasets, similarly large differences were found, but not in all; a plausible explanation is different, and possibly insufficient, hyperparameter optimization. Indeed, it is noted in \cite{Yang.2019}, that all architectures (baseline as well as the newly proposed D-MPNN) are applied with unspecified default parameters (making a fair comparison virtually impossible, see results and discussion section).
 
@@ -388,6 +390,8 @@ Recently, in the context of QSAR, the role of activity cliffs is intensively dis
 This implies that the structural differences cause big biological differences.\cite{Stumpfe.2019} It is crucial to not confuse them with outliers \cite{Maggiora.2006}.
 
 In particular, it is astonishing that molecular fingerprints outperform GNNs especially in ‘difficult’ tasks which should be more suited for the latter, e.g. in activity cliff prediction.
+
+Also \cite{Jiang.2021} rightly mentions that these evaluations are often rather biased against the classical fingerprints. For example, for ECFP only Random Forests and Support Vector Machines are tried as classifiers, but newer, more complex and potentially superior ML classifiers, e.g. gradient-boosting techniques like LightGBM, are not included in the benchmark. In many cases, also hyperparameter optimization can lead to performance distortions which are wrongly interpreted as essential differences between the architectures. 
 
 
 \section{Previous work}
