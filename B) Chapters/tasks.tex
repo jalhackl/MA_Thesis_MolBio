@@ -1,21 +1,7 @@
 \chapter{Molecular property prediction}
 
-Furthermore, usually it is only stated that there are different results on different data size, but an explanation or at least an investigation of the correlation between training set size and performance is missing.
+Furthermore, usually it is only stated that there are different results on different data size, but an explanation or at least an investigation of the correlation between training set size and performance is missing. For this study, it was tried to do such an analysis on some typical regression and classification datasets.
 
-\section{Regression tasks}
-
-For regression tasks, MAE and MSE are used as loss functions. For the predictions, both errors are reported. 
-Given the potential role of outliers, it seems advisable to compare both errors.
-
-\section{Classification tasks}
-
-For classification tasks, AUPR and AUROC are reported. For specific cases of interest, precision-recall curves are shown.
-Furthermore, the distribution of predicted probabilities is investigated.
-
-\section{Protein - ligand and ligand -ligand interaction}
-
-It should be noted that protein-ligand interaction tasks often provide spurious results \cite{Volkov.2022}.
-Even when it is unlikely due to these problems that one gets results sufficiently reliable for practical application, the comparison between circular fingerprints and GNNs can be highly insightful.
 
 \section{Datasets}
 
@@ -58,7 +44,7 @@ Experimental results of octanol/water distribution coefficient(logD at pH 7.4).
 
 The task is to predict the ability of molecules to inhibit HIV replication.
 It consists of 41127 molecules which were evaluated during 47 screening results were evaluated and placed into three categories: confirmed inactive (CI), confirmed active (CA) and confirmed moderately active (CM).
-The binary positive class is merged from 'moderately active' and 'active'. (It would be reasonable to only retain the positive instances originally labeled as 'active'; however, usually the full dataset is processed.)
+Two classes, 'moderately active' and 'active', are merged into one binary positive class. (It would be reasonable to only retain the positive instances originally labeled as 'active'; however, usually the full dataset is processed.)
 
 
 
@@ -81,11 +67,12 @@ The ClinTox dataset provides information about drug toxicity. It comprises drugs
 
 \subsubsection{ZINC}
 
-The ZINC database provides comprehensive information 
-For the used dataset, the goal is to predict the constrained solubility of the molecules
+The ZINC database provides comprehensive information of commercially available compounds for virtual screening.
+For the used dataset, the goal is to predict the constrained solubility of the molecules.
 The full set consists of 250k molecules.
 Fig. \ref{fig:zinc_descr} shows the distribution of the molecular weight and the solubility of the full dataset.
 As the dataset from pytorch Geometric does not contain SMILES-strings, the ZINC dataset from the deepchem library was used.
+
 In the context of this study, the enormous size of the ZINC dataset allows for a systematic investigation of the influence of the training data size on the performance of GNNs.
 
 \begin{figure}
@@ -97,9 +84,9 @@ In the context of this study, the enormous size of the ZINC dataset allows for a
 
 \subsubsection{ADME}
 
-The ADME (absorption, distribution, metabolism, and excretion) dataset consists of 3521 diverse compounds which belong to 3028 distinct scaffolds. 2736 of these scaffolds contain only one molecule \cite{Fang.2023}. This should ensure a very high structural diversity (and make scaffold splitting rather unnecessary, see chapter methods). 
-ADME processes ; for potential drug candidates a balanced ADME profile is an essential property \cite{Fang.2023}.
-Six properties are given: include human liver microsomal (HLM) stability reported as intrinsic clearance (Clint, mL/min/kg), MDR1-MDCK efflux ratio (MDR1-MDCK ER), solubility at pH 6.8 (ug/mL), rat liver microsomal (RLM) stability reported as intrinsic clearance (Clint, mL/min/kg), human plasma protein binding (hPPB) percent unbound, and rat plasma protein binding (rPPB) percent unbound.
+The ADME (absorption, distribution, metabolism, and excretion) dataset consists of 3521 diverse compounds which belong to 3028 distinct scaffolds. 2736 of these scaffolds contain only one molecule \cite{Fang.2023}. This structure is highly different from other datasets (e.g. MoleculeNet) and should ensure a very high structural diversity (and make scaffold splitting rather unnecessary, see chapter methods). 
+ADME processes are highly important for drug metabolism, for potential drug candidates a balanced ADME profile is an essential property \cite{Fang.2023}.
+Six properties are given in  the datset: include human liver microsomal (HLM) stability reported as intrinsic clearance (Clint, mL/min/kg), MDR1-MDCK efflux ratio (MDR1-MDCK ER), solubility at pH 6.8 (ug/mL), rat liver microsomal (RLM) stability reported as intrinsic clearance (Clint, mL/min/kg), human plasma protein binding (hPPB) percent unbound, and rat plasma protein binding (rPPB) percent unbound.
 
 For example, in \cite{Fang.2023} it is noted that the addition of 2D RDKit descriptors to the molecular graph representation improved the performance. 
 

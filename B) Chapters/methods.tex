@@ -4,8 +4,7 @@
 
 \subsection{GNN libraries}
 
-For implementation of the neural network architectures, mostly Pytorch and, for the GNNs, Pytorch Geometric were used. Pytorch Geometric provides the most common GNN models, e.g. GCNs and GINs. These types are usually implemented in two versions.
-Pytorch \cite{Paszke.03.12.2019}
+For implementation of the neural network architectures, mostly Pytorch \cite{Paszke.03.12.2019} and, for the GNNs, Pytorch Geometric were used. Pytorch Geometric provides the most common GNN models, e.g. GCNs and GINs. These types are usually implemented in two versions.
 
 Another widely used GNN library, also able to act on top of Pytorch, is DGL.
 The DGL Model Zoo encompasses many GNN architectures for molecular property prediction, including neural versions of fingerprints (currently: AttentiveFP Predictor, GAT Predictor, GATv2 Predictor, MGCN Predictor, MPNN Predictor, SchNet Predictor, Weave Predicot, GIN Predictor, GNN OGB Predictor, Neural Fingerprint Predictor, Path-Augmented Grpah Transformer Predictor).
@@ -40,6 +39,11 @@ In \cite{Duvenaud.30.09.2015}, the following generalization for continuous data 
 
 \subsection{Metrics}
 
+
+For regression tasks, MAE and MSE are used as loss functions. For the predictions, both errors are reported. 
+Given the potential role of outliers, it seems advisable to compare both errors.
+For classification tasks, AUPR and AUROC are reported. For specific cases of interest, precision-recall curves are shown.
+Furthermore, the distribution of predicted probabilities is investigated.
 
 
 \subsubsection{Regression tasks}
