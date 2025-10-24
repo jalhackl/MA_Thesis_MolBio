@@ -1,30 +1,19 @@
 \chapter{Implementation details}
 
-
+One of the major goals of this study is the comparison of different GNN models and classifiers using classical molecular fingerprints (in particular, ECFP/Morgan fingerprints).
 For this purpose, highly customizable workflows based on PyTorch have been implemented.
 
 
-Furthermore, some basic notions which are of particular importance for the performance of the architectures, e.g. norm layers, will be explained in some more detail.
 
-Furthermore, 'molecules' with less than two atoms were discarded. (Certainly, this does not make any difference because usually in the datasets there are only proper molecules; however, in some cases, defective SMILES led to such entries.) 
 
 So in a first step, for multiple datasets (see tasks, datasets) provisional results were computed and it was checked whether significant differences between approaches and architectures can be found.
 
 For most architectures and parameter settings, the first benchmarks were performed using the simple, often used ESOL dataset. Given the results on this dataset, selected methods were investigated in more detail on other datasets.
 
-If not stated otherwise, the datasets were not preprocessed, e.g. no outliers or duplicates were removed.
+If not stated otherwise, the datasets were not preprocessed, e.g. no outliers or duplicates were removed. However, 'molecules' with less than two atoms were discarded. (Certainly, this does not make any difference because usually in the datasets there are only proper molecules; however, in some cases, defective SMILES led to such entries.) 
 
 
 
-higher-order
-
-The evaluation of such a network architecture is also interesting for comparison purposes since they were not tested on molecular graphs except for the ZINC dataset in the Nested GNN publication (In the format of the default ZINC loader from Pytorch Geometric with solely the atom type as atom feature).
-
-The only used feature was the atom type.
-(In the format of the default ZINC loader from Pytorch Geometric). (In principle, it should be easy to project lists of features to 1D.)
-
-
-In this regard, one would also have to reflect what constitutes a fair comparison: For GNNs – given sufficient input data as well as neuron and layer numbers -, it is rather natural that additional information, e.g. additional node features, increase the performance (as long as it is really additional information about the underlying distribution and not just noise).
 
 
 
@@ -42,8 +31,7 @@ Afterwards, the optimal hyperparameters determined have been used for extended e
 
 In cases of promising results - i.e. when without new determination of optimal hyperparameters the results were better, e.g., in terms of mean error or variance of the error -, hyperparameter optimization was performed anew for these settings.
 
-Unfortunately, for these classification tasks in almost none publication it is revealed how this data imbalance is tackled (which suggests that the data is taken as it is). Given the fact that most typical benchmark datasets (e.g. from MoleculeNet) are highly imbalanced, this is very problematic. It turns out to be even more severe since many split techniques, e.g. the usually, in addition to the random split, applied scaffold split, leverages the imbalancing extremely.
-Common ways of treating imbalanced datasets are upsampling, i.e. instances of the rare class are copied, and weighting, i.e. the errors/losses get weighted proportional to their frequency in the dataset.
+
 
 
 
@@ -87,16 +75,17 @@ A more thorough investigation of the effect of the clustering algorithm on the e
 It is not unlikely that depending on the type of split different hyperparameter combinations are optimal, since the effective task changes: For random splits, it is rather interpolation, whereas for scaffold splits, or other split techniques which minimize the similarity between training and validation/test set, the goal is extrapolation.
 (It should be noted that also the amount of available data can lead to different optimal hyperparameter configurations.)
 
+
+A fair evaluation of differences in variance between splitting techniques is even more difficult because depending on the technique, the similarity of the split sets is highly different and is also associated with the data (for instance, small datasets with a limited number of scaffolds will give very similar scaffold splits).
 For the ESOL dataset, the effects of the splitting technique are shown in fig.
-
-
-However, a fair evaluation of differences in variance between splitting techniques is even more difficult because depending on the technique, the similarity of the split sets is highly different and is also associated with the data (for instance, small datasets with a limited number of scaffolds will give very similar scaffold splits).
-
 
 \subsection{Imbalanced data}
 
 
-However, it should be noted that the usage of over-sampling methods which create synthetic data like SMOTE is potentially problematic in this context since it would probably tremendously exacerbate the danger of overfitting. (However, the analysis of the performance on such augmented datasets could be used for an investigation of the problem.)
+Unfortunately, for the classification datasets it is rarely revealed in publications how the data imbalance is tackled (which suggests that the data is usually taken as it is). Given the fact that most typical benchmark datasets (e.g. from MoleculeNet) are highly imbalanced, this is problematic. It turns out to be even more severe since many split techniques, e.g. the usually, in addition to the random split, applied scaffold split, leverages the imbalancing extremely.
+Common ways of treating imbalanced datasets are upsampling, i.e. instances of the rare class are copied, and weighting, i.e. the errors/losses get weighted proportional to their frequency in the dataset.
+
+It also should be noted that the application of over-sampling methods relying on the creation of synthetic data is potentially problematic in this context since it probably tremendously exacerbates the danger of overfitting. (However, an analysis of the performance on such augmented datasets could be used for an investigation of the problem.)
 
 Similarly to the more general question whether additional data can be harnessed by the models, in this respect the question is whether additional inactive compounds improve performance, i.e. it could be that they  lead to a reduction of false positives.
 
@@ -106,13 +95,13 @@ It should be noted that in most publications details how imbalanced data has bee
 \subsection{Encoding of atom and edge features}
 
 
-Table shows the features used by these in-built featurizers.
+The used libraries support different featurizers for nodes/atoms and edges/bonds. Table shows the features used by these in-built featurizers.
 
 In the architectures which support edge information, the default edge featurizers from Pytorch Geometric and DGL are used. 
 
 It should be noted that many of the edge features do not provide new information, but are redundant due to the atom features; however, this does not necessarily imply that this additional input has no impact on performance.
 
-It could be insightful to test whether for feature sets without such a feature the optimal radius is different (one would it expect to be bigger).
+It could be insightful to test whether for feature sets without such a feature the optimal radius is different (one would expect the optimal fingerprint radius to be bigger).
 
 \subsection{Classification of features}
 
@@ -129,7 +118,7 @@ The boundary between 2) and 3) is rather obscure, 4) however is clearly distinct
 
 Features of group 4) can be usually found in the periodic table and directly incorporate chemico-physical knowledge on the element level.
 
-For the circular fingerprints, most of these additional features are redundant since they do not allow a better differentiation of structures. This is in particular true for group 4). (Usually the atomic number is provided as feature; since these features from the periodic table, like electronegativity, are in a unique mapping with the atomic number, they do not provide new information for the distinction of substructures.) In contrast, for the GNNs, the additional information can be harnessed for updating the weights according to the specific task or even learn general chemical insights.
+For the circular fingerprints, most of these additional features are redundant since they do not allow a better differentiation of structures. This is in particular true for group 4). (Usually the atomic number is provided as feature; since these features from the periodic table, like electronegativity, are in a unique mapping with the atomic number, they do not provide any new information for the distinction of substructures.) In contrast, for the GNNs, the additional information can be harnessed for updating the weights according to the specific task or, in principle, even learn general chemical insights.
 
 
 \begin{table}
@@ -220,11 +209,12 @@ In principle, this could lead to misleading conclusions concerning the performan
 Jumping knowledge, as introduced in \cite{Xu.01.10.2018}, allows the combination of the output of the GNN layers in the final aggregation layer.
 Different functions for the aggregation have been proposed: Either concatenation of all layer outputs, or the maximum can be used. Alternatively, a LSTM which subsequently processes the layer outputs can be trained.
 Jumping knowledge is introduced as means to harness also more intricate, and possibly distant long-range interactions.
-In \cite{Xu.01.10.2018}, networks with jumping knowledge performed superior in many tasks. In this context, it is also mentioned that a small number of layers (2) in many tasks performs better than more complex architectures.
+In \cite{Xu.01.10.2018}, networks with jumping knowledge performed superior in many tasks. In this context, it is also mentioned that a small number of layers (2) in many tasks performs better than more complex architectures, suggesting again that overfitting could be crucial for performance.
 
 
 Alternatively, one could simply concatenate the output of the individual layers, but apply different activation functions (or other transformation) on the layer-output before it is incorporated into the aggregation.
 Given the fact that also ECFPs store the structures found at a smaller radius and do not discard this information, implementation of jumping knowledge or the final concatenation of the layers promises to provide a graph-based representation which is more similar.
+
 For the experiments, also a more sophisticated approach has been implemented, applying on the copied values to be concatenated different operations, e.g. activation functions, than on the values which are processed in the subsequent graph layers (see section 'Custom activation functions').
 
 \subsubsection{Normalization techniques}
@@ -302,13 +292,11 @@ A common approach is the Straight-Through Estimator proposed by Hinton in 2012 \
 
 \subsubsection{Pooling and aggregation functions}
 
-\cite{Schweidtmann.2023}
 
 Common aggregation functions are mean, max and sum. For GINs, it has been shown that sum-aggregation has the highest expressivity in distinguishing between input graphs.
 (However, it should be stressed again that this does not imply that sum-aggregation always provides the highest performance in specific tasks.)
 
-A more sophisticated choice is Set2Set \cite{Vinyals.19.11.2015}.
-This pooling operator is based on a LSTM refinement step.
+A more sophisticated choice is Set2Set \cite{Vinyals.19.11.2015}. This pooling operator is based on a LSTM refinement step.
 
 \begin{align*}
 q_t &= \text{LSTM}(q_{t-1}^*) \\
@@ -317,30 +305,22 @@ r_t &= \sum_{i=1}^N \alpha_{i,t} x_i \\
 q_t^* &= q_t \, \| \, r_t
 \end{align*}
 
-In principle, one can also try to emulate fingerprint-like behaviour by deploying suitable pooling operations.
-DiffPool segments the graph into smaller subgraphs using an assignment matrix.
-\cite{Ying.22.06.2018}
+A review on the performance of different pooling functions can be found in \cite{Schweidtmann.2023}. They were benchmarked on the QM9 dataset, using various propertiers, among them also molecular weight. The QM9 dataset contains quantum chemical properties for more than 100k molecules. The pooling sets were applied to a simple 1-GNN and MXMNet, a GNN architecture with a directed message passing scheme and incorporation of two graph representations also using coordinates \cite{Zhang.15.11.2020}  (without hyperparameter optimization, e.g. with a fixed number and size of layers). It is stressed that the pooling function should be physically meaningful. The authors discern between molecular size-dependent and molecular size-independent properties, i.e. properties which scale with the number of atoms and such which do not. For the first category of properties, sum pooling was clearly outperforming the other pooling functions (in particular, for molecular weight).
+Meanwhile, an improved version of MXMNet, PAMNet is available \cite{Zhang.2023}
 
+In principle, one can also try to emulate fingerprint-like behaviour by deploying suitable pooling operations. 
+For example, DiffPool segments the graph into smaller subgraphs using an assignment matrix \cite{Ying.22.06.2018}.
 However, it has to be kept in mind that the fingerprints create subgraphs depending on unique molecular features.
 
 \subsection{Enhanced training strategies}
 
-As outlined in the previous section, activity cliffs as well as the presence of dissimilar molecules in the training set are problematic for the performance of GNNs. Additionally to common methods like dropout and normalization, also a judicious selection of the loss function could improve the results.
+As outlined in the previous section, activity cliffs as well as the presence of dissimilar molecules in the training and test sets are problematic for the performance of GNNs. Additionally to common methods like dropout and normalization, also a judicious selection of the loss function could improve the results.
 For most runs presented, MAE was chosen since this is also mostly used in previous publications on GNNs and molecular property prediction.
 
-Moreover, given the problem of outliers, it seems to be advisable to use a loss function robust in this regard (however, this is two-fold: on the other hand, in some cases, outliers are pair of an activity cliff and it is of great interest to figure out under which circumstances they appear).
+Moreover, given the problem of outliers, it seems to be advisable to use a loss function robust in this regard (however, this is two-fold: on the other hand, in some cases, outliers are pair of an activity cliff and it is of great interest to figure out under which circumstances they appear), i.e. one could penalize outliers more extremely.
 
 In case of Attentive FP, the default parameters of the Pytorch Geometric model have been used.
 
-
-
-
-\subsection{Combination of GNNs and global feature vector}
-
-The potential dependency on global features gives rise to the question how global information could be incorporated into the node representation. On the other hand, perhaps a separation of both steps - i.e. GNN layers and subsequent concatenation with a global ffeature vector - could be even more promising.
-
-In general, numerous variants are possible.
-Or implement the global features as attention vector which the nodes can attend to (e.g. via the neural network within the GIN layer).
 
 
 
@@ -350,11 +330,12 @@ As a further baseline, predictions from global properties alone were computed.
 For the calculation, functions of RdKit were used.
 
 
-These features include, amongst others, the accessible surface area, the number of specific atoms and the molecular weight (see table \ref{tab:molecular_properties}).
-
-Many of these features are collinear; an appropriate subset has been used.
+These features include, amongst others, the accessible surface area, the number of specific atoms and the molecular weight (see table \ref{tab:molecular_properties}). As many of these features are highly collinear, an appropriate subset has been used.
 
 One could also select all global features indicating the number of occurrences of a particular element. In case that only the number of different atom types is considered, this should be equivalent to a Morgan fingerprint of radius zero and only atom type as invariant.
+
+The potential dependency on global features gives rise to the question how global information could be incorporated into the node representation. Perhaps a separation of both steps - i.e. GNN layers and subsequent concatenation with a global feature vector - could be even more promising. In general, numerous variants are possible. For example, one could also implement the global features as attention vector which the nodes can attend to (e.g. via the neural network within the GIN layer).
+
 
 
 \begin{table}[h!]
@@ -408,7 +389,7 @@ In particular, the results in this study (presented in the next section) as well
 
 A straightforward approach for creating a neural version of a Morgan Fingerprint would thus create all subgraphs up to a given radius and then perform usual GNN operations on these subgraphs.
 
-Nested Graphs should give a similar number of subgraphs.
+Nested Graphs should provide a similar number of subgraphs.
 
 
 For the determination of isomorphic subgraphs, the Weisfeiler-Leman algorithm as well as an exact algorithm were applied (for both, the NetworkX-library was used).

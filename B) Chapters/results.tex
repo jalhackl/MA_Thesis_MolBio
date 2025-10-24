@@ -1,6 +1,11 @@
 \chapter{Results}
 
+
+The main goal was to get a rough overview of whether or what differences and size there are between the architectures.
+A major incentive for the application of very diverse datasets was the detection of differences in performance.
+
 The evaluation of performance differences is of utmost importance since it also influences the reliability of claims that refined architectures like the Attentive Fingerprint are capable of learning generalizable knowledge about molecular structures (and, because such knowledge is crucial for accurate predictions, outperform previous models).
+
 
 Similarly, it could be insightful to check whether the same difference ranking occurs for different runs and, in case of different splits, and whether similar molecules – or the same molecules in case they appear multiple times in the test set – behave also similarly.
 
@@ -23,7 +28,7 @@ If the main reason for an inferior performance of GNNs compared to Morgan Finger
 It should be further stressed that the differences in performance presented are usually rather small.
 In this regard, it is also a central goal to assess which architectural decisions really matter.
 
-After a first investigation, it turned out that the datasets differ highly in difficulty: Whereas for some (e.g. the ESOL dataset), all architectures achieve 'good' results, for other ones even a positive correlation between true and predicted values is hard to achieve; in some cases, suboptimal parameters lead to horizontal curves for regression tasks.
+After a first investigation, it turned out that the datasets differ highly in difficulty: Whereas for some (e.g. the ESOL dataset), all architectures achieve 'good' results, for other ones even a positive correlation between true and predicted values is rather difficult to achieve; in some cases, suboptimal parameters lead to horizontal curves for regression tasks.
 
 
 In particular, one should also point at the danger of biases in the datasets itself.
@@ -37,14 +42,9 @@ Therefore, in cases for which a modified architecture was used, but hyperparamet
 Analogously, for classification tasks, one has to check whether the ratio between the classes affects molecular fingerprints differently than graph representations.
 
 
-(Most of the datasets were used in other studies evaluating either the performance of Morgan fingerprints or graph representations; however, due to the problems elaborated on above, a comparison was impossible.)
-
-A major incentive for the application of very diverse datasets was the detection of differences in performance.
+(Most of the datasets were used in other studies evaluating either the performance of Morgan fingerprints or graph representations; however, due to the problems elaborated on above, a fair comparison was only possible to a limited degree.)
 
 
-The main goal was to get a rough overview of whether or what differences and size there are between the architectures.
-
-In some cases, default values are omitted for a clearer representation (e.g., the default for Jumping Knowledge is ‘None’, equally for dropout and normalization layers, and also usually no frozen layers are applied).
 
 \section{Comparison of embeddings and substructures on 'toy examples'}
 
@@ -55,7 +55,7 @@ Again, it has to be stressed that the maximizing of expressivity, i.e. the abili
 One possibility is to ‘train’ the network with all weights frozen.
 Comparison with the trained version shows whether trained parameters lead to a diminished differentiation of graphs (which is not necessarily accompanied by a drop in performance, but can even be beneficial).
 
-(For reasons of efficiency, it cannot be recommended to use such a neural network in practice; in almost every scenario, the computation of the fingerprints is much faster and less resource-intensive than the instantiation – or even training, which in case of frozen layers can be partly ignored – of a neural network.)
+(For reasons of efficiency, it can hardly be recommended to use such a neural network in practice; in almost every scenario, the computation of the fingerprints is much faster and less resource-intensive than the instantiation – or even training, which in case of frozen layers can be partly ignored – of a neural network.)
 
 
 RdKit also supports the computation of rooted fingerprints: Instead of one fingerprint for the full molecule, for specific atoms all substructures are outputted (in case of the Morgan fingerprint, this means all substructures of the specified radius with the selected atom as central atom).
@@ -68,6 +68,8 @@ number of unique nodes acr
 \section{Hyperparameter optimization}
 
 If not stated otherwise, in the boxplots all information given before 'opt. hyperparameters' indicates fixed parameters (this is important since parameters to be optimized in some runs are treated as fixed in other ones, e.g. Jumping Knowledge).
+
+In some cases, default values are omitted for a clearer representation (e.g., the default for Jumping Knowledge is ‘None’, equally for dropout and normalization layers, and also usually no frozen layers are applied).
 
 \section{Inter- and intra-run variance}
 
@@ -88,6 +90,8 @@ In particular, there are optimal combinations with a rather complex, expressive 
 
 
 In the setting with one layer of the same size as the graph output channels, dropout has rather high (e.g. 0.15, in same cases 0.5) values. Usually, a more compact classification layer is used.
+
+In the next sections, more detailed results for some of the datasets are presented.
 
 \subsection{ESOL}
 

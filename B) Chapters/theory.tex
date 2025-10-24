@@ -2,6 +2,7 @@
 
 
 
+
 \section{Molecular fingerprints}
 
 Molecular fingerprint are wiedely used in cheminformatics to represent the structure of molecules for various purposes, such as similarity searching and machine learning in drug discovery.
@@ -55,8 +56,10 @@ Fig. \ref{fig:morgan_radius} shows the radii 1 and 2 of selects atoms of styrene
 
 \section{Graph Neural Networks}
 
-Graph Neural Networks work on graph data; they can be seen as generalizations of convolutional neural networks (CNNs).
+In the following, the working mechanisms of the applied GNNs will be described. Furthermore, some basic notions which are of particular importance for the performance of the architectures, e.g. norm layers, will be additionally explained in some more detail.
 
+
+Graph Neural Networks work on graph data; they can be seen as generalizations of convolutional neural networks (CNNs).
 Unlike traditional fingerprints, GNNs treat molecules as graphs, where atoms are nodes and bonds are edges. This structure allows GNNs to directly process the molecular graph and learn more flexible, task-specific representations via message-passing mechanisms. Given that GNNs operate on graph data, they are naturally suited for capturing the intricate connectivity patterns of molecules, which are central to their properties.
 
 They can be applied for different purposes, like node (for individual nodes of the graph, labels or values are predicted)    and graph classification (for the whole graph, a label or value is predicted) as well as link prediction (prediction of the likelihood that an edge exists between specific nodes). In the context of molecular property prediction, one usually deals with graph classification problems, e.g. the label (indicating toxicity, inhibitory activity, etc.) or a value (solubility, lipophilicity, etc.) for the graph which represents a specific molecular compound is determined.
@@ -301,6 +304,12 @@ Similarly, for Nested GNNs high variance was reported in \cite{Zhang.2021}. They
 Each subgraph up to a specific radius is evaluated; as base GNN various architectures, e.g. GCN and GIN, can be used.
 In \cite{Zhang.2021}, this architecture was tested on the QM9 dataset and the HIV and PCBA datasets.
 
+
+The evaluation of such a network architecture is also interesting for comparison purposes since they were not tested on molecular graphs except for the ZINC dataset in the Nested GNN publication (In the format of the default ZINC loader from Pytorch Geometric with solely the atom type as atom feature).
+The only used feature was the atom type.
+(In the format of the default ZINC loader from Pytorch Geometric). (In principle, it should be easy to project lists of features to 1D.)
+
+In this regard, one would also have to reflect what constitutes a fair comparison: For GNNs – given sufficient input data as well as neuron and layer numbers -, it is rather natural that additional information, e.g. additional node features, increase the performance (as long as it is really additional information about the underlying distribution and not just noise).
 
 
 \subsection{Combination of fingerprint and GNN information}

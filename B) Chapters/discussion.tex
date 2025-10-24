@@ -14,7 +14,7 @@ In the ESOL-dataset, molecules with a high number of identical substructures are
 
 This leads to the problem that fatty acids of different chain length cannot be distinguished anymore.
 
-The ESOL dataset contains a lot of fatty acids and related compounds and it is known that the target property, solubility, is highly negatively correlated with the length of fatty acids.
+The ESOL dataset contains a lot of fatty acids and related compounds and it is known that the target property, solubility, is highly negatively correlated with the length of fatty acids. This explains why some earlier comparisons with fingerprints, including only the bitwise versions, claimed GNNs to be superior.
 
 
 
@@ -82,12 +82,10 @@ For regression tasks, the problem is similar: Depending on the split, the distri
 
 \section{Investigation of frozen layers}
 
-Interestingly, for most datasets, frozen GIN layers provide much worse results when coupled with batch normalization.
+The effect of frozen layers has been analyzed checking Tanimoto similarity and layer outputs. Interestingly, for most datasets, frozen GIN layers provide much worse results when coupled with batch normalization.
 
-, i.e. a typical case of oversmoothing.
 
-The effect of frozen layers has been analyzed checking Tanimoto similarity and layer outputs.
-Batch normalization reduces the variability, giving rise to the counter-intuitive result that for frozen layers it worsens performance.
+A reasonable explanation is that Batch normalization reduces the variability and so gives rise to the counter-intuitive result that for frozen layers it worsens performance (, i.e. a typical case of oversmoothing).
 
 
 
@@ -103,7 +101,5 @@ In many cases, variance is much higher for architectures using graph representat
 
 On well-known datasets (e.g., ESOL) it was demonstrated that the splitting technique highly influences the performance differences between the architectures. Further results have shown that this finding can be generalized.
 
-
-From this perspective, the GNN architectures also could forget structures which are not of importance for the task at hand, leading to better generalization.
 
 However, it should be noted that the performance increase for feature-based fingerprints and feature subsets is limited. Depending on the task, also pharmacophore-based fingerprints could be used etc.

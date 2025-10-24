@@ -19,7 +19,7 @@ This leads to the idea that a task-specific feature extraction step (which could
 
 It also should be noted that even the analyses shown did not vary all possibly important parameters, i.e. the aggregation function used in the Message Passing step. One could also experiment with adaptive learning rates and more sophisticated loss functions.
 
-On the other hand, similar to baselines like linear regression and the prediction solely from global, unspecific properties like molecular weight, one should also bear in mind that the existence of an upper limit cannot be ruled out.
+On the other hand, similar to baselines like linear regression and the prediction solely from global, unspecific properties like molecular weight, one should also bear in mind that the existence of an upper limit - i.e. the input simply does not allow a more accurate prediction - cannot be ruled out.
 
 Furthermore, the problem of splitting has been exposed in an unprecedented way.
 It was observed that the performance differences between architectures can be maximized for specific splits.
@@ -54,3 +54,7 @@ It should be noted that there is no training of the graph involved, all paramete
 As noted initially, mostly rather basic models were compared.
 
 However, the results also indicate that with proper hyperparameter optimization the selection of the best model even becomes more difficult.
+
+
+
+From this perspective, the ability of GNN architectures to forget the difference between structures  which are not of importance for the task at hand, i.e. treat them equally because of a similar mapping, leading to better generalization.
